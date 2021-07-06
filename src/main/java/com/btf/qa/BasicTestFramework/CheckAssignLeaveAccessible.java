@@ -4,11 +4,14 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.btf.qa.pageObjects.AssignLeavePage;
 import com.btf.qa.pageObjects.DashboardPage;
 import com.btf.qa.pageObjects.LoginPage;
 import com.btf.qa.resources.base;
@@ -24,25 +27,48 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 	}
 
 	
+
+	
 	@Test(dataProvider = "getData")
-	public void loginSuccess(String Username, String Password) throws IOException {
+	public void checkAssignLeaveWorks(String Username, String Password) throws InterruptedException {
 		
-		driver.get(prop.getProperty("url"));
-        
+	   driver.get(prop.getProperty("url"));
+        AssignLeavePage alp = new AssignLeavePage(driver); 
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys(Username);
 		lp.getPassword().sendKeys(Password);
 		lp.getLogin().click();
 		
-		Log.info("Successfully Logged in");
-	}
-	
-	
-	@Test
-	public void checkAssignLeaveWorks() {
+		Log.info("Successfully Logged in");			
+		
+		
 		DashboardPage dp = new DashboardPage(driver);
-		dp.getassignLeaveNavigation();
-		System.out.println("Navigated to AssignLave page");
+		dp.getassignLeaveNavigation().click();
+		
+		String expectedM ="Assign Leave";
+		WebElement currentM = dp.getassignPageLeaveName();
+		
+		if(currentM.equals(expectedM)) {
+			System.out.println("Navigated to AssignLave page");
+		}else {
+			System.out.println("Something went wrong");
+		}
+		
+		
+		
+		
+		
+		//FIND ASSIGN LEAVES ELEMENTS
+		alp.getempNameF().sendKeys("Lisa Adams");
+		
+		
+		//STATIC DROPDOWN
+		WebElement sleaveType = alp.leaveTypeF();
+		Select sleaveTypeDrop = new Select(sleaveType); 
+		sleaveTypeDrop.selectByIndex(3);
+		
+		
+		
 		
 	}
 	

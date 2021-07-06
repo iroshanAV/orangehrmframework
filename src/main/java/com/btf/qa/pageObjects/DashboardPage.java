@@ -12,11 +12,16 @@ public class DashboardPage {
 		this.driver = driver;
 	}
 	
-	By assignLeaveNavigation = By.xpath("//*[@id='dashboard-quick-launch-panel-menu_holder']table/tbody/tr/td[1]/div/a");
+	By assignLeaveNavigation = By.xpath("//*[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td[1]/div/a");
 	By leaveListNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[2]/div/a");
 	By timeSheetsNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[3]/div/a");
 	By applyLeaveNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[4]/div/a");
 	By myLeaveNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a");
+	
+	
+	By assignLavePageName = By.xpath("//*[@id=\"assign-leave\"]/div[1]/h1");
+	
+	
 	
 	public WebElement getassignLeaveNavigation() {
 		return driver.findElement(assignLeaveNavigation);
@@ -39,5 +44,8 @@ public class DashboardPage {
 	}
 	
 	
+	public WebElement getassignPageLeaveName() {
+		return driver.findElement(assignLavePageName);
+	}
 	
 }

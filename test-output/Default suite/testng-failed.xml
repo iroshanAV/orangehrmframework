@@ -5,7 +5,7 @@
     <classes>
       <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
         <methods>
-          <include name="checkAssignLeaveWorks"/>
+          <include name="checkAssignLeaveWorks" invocation-numbers="0"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
