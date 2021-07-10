@@ -59,16 +59,29 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 		
 		
 		//FIND ASSIGN LEAVES ELEMENTS
-		alp.getempNameF().sendKeys("Lisa Adams");
-		
+		alp.getempNameF().sendKeys("Lisa Andrews");
+		Thread.sleep(40);
 		
 		//STATIC DROPDOWN
 		WebElement sleaveType = alp.leaveTypeF();
 		Select sleaveTypeDrop = new Select(sleaveType); 
 		sleaveTypeDrop.selectByIndex(3);
-		
-		
-		
+		Thread.sleep(40);
+
+		alp.getfromDateF().clear();
+		alp.getfromDateF().sendKeys("2021-08-12");
+		Thread.sleep(8000);
+
+		alp.gettoDateF().clear();
+		alp.gettoDateF().sendKeys("2021-08-14");
+		Thread.sleep(8000);
+
+		alp.getcommentF().sendKeys("Give her a break");
+		Thread.sleep(40);
+
+		alp.getassignB().click();
+		System.out.print("Button clicked");
+		Thread.sleep(8000);
 		
 	}
 	

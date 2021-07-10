@@ -17,6 +17,7 @@ public WebDriver driver;
 	By toDateF   = By.id("assignleave_txtToDate");
 	By commentF = By.id("assignleave_txtComment");
 	
+	By assignB = By.id("assignBtn");
 	
 	public WebElement getempNameF() {
 		return driver.findElement(empNameF);
@@ -38,5 +39,8 @@ public WebDriver driver;
 		return driver.findElement(commentF);
 	}
 	
+	public WebElement getassignB() {
+		return driver.findElement(assignB);
+	}
 	
 }
