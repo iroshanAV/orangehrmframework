@@ -32,7 +32,8 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 	@Test(dataProvider = "getData")
 	public void checkAssignLeaveWorks(String Username, String Password) throws InterruptedException {
 		
-	   driver.get(prop.getProperty("url"));
+		//LOGGINS
+	    driver.get(prop.getProperty("url"));
         AssignLeavePage alp = new AssignLeavePage(driver); 
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys(Username);
@@ -41,7 +42,7 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 		
 		Log.info("Successfully Logged in");			
 		
-		
+		//PAGE NAME VERIFICATION
 		DashboardPage dp = new DashboardPage(driver);
 		dp.getassignLeaveNavigation().click();
 		
@@ -57,30 +58,50 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 		
 		
 		
+		Log.info("Started filling the form");	
 		
 		//FIND ASSIGN LEAVES ELEMENTS
+		Log.info("Entered name");	
 		alp.getempNameF().sendKeys("Lisa Andrews");
 		Thread.sleep(40);
 		
 		//STATIC DROPDOWN
+		Log.info("Entered leave type");			
 		WebElement sleaveType = alp.leaveTypeF();
 		Select sleaveTypeDrop = new Select(sleaveType); 
 		sleaveTypeDrop.selectByIndex(3);
 		Thread.sleep(40);
-
+        
+		//FROM DATE PICKER
+		Log.info("Entered from date");		
 		alp.getfromDateF().clear();
 		alp.getfromDateF().sendKeys("2021-08-12");
+		alp.getCalendarF().click();
 		Thread.sleep(8000);
 
+		//TO DATE PICKER
+		Log.info("Entered to date");	
 		alp.gettoDateF().clear();
-		alp.gettoDateF().sendKeys("2021-08-14");
+		alp.gettoDateF().sendKeys("2021-08-12");
+		alp.getCalendarF1().click();
 		Thread.sleep(8000);
-
+		
+		//DURATION DROPDOWN
+		Log.info("Entered duration");
+		WebElement durationType = alp.getDurationF();
+		Select durationTypeS = new Select(durationType);
+		durationTypeS.selectByIndex(0);
+		Thread.sleep(8000);
+        
+		//COMMENT
+		Log.info("Entered comment");
 		alp.getcommentF().sendKeys("Give her a break");
 		Thread.sleep(40);
 
+		//ASSIGN BUTTON CLICK
+		Log.info("Entered Assign Button");	
 		alp.getassignB().click();
-		System.out.print("Button clicked");
+		System.out.println("Leave Assigned");
 		Thread.sleep(8000);
 		
 	}

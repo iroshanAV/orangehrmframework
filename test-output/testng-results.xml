@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-10T19:35:01 IST" name="Default suite" finished-at="2021-07-10T19:35:42 IST" duration-ms="40910">
+  <suite started-at="2021-07-17T14:48:50 IST" name="Default suite" finished-at="2021-07-17T14:49:42 IST" duration-ms="52216">
     <groups>
     </groups>
-    <test started-at="2021-07-10T19:35:01 IST" name="Default test" finished-at="2021-07-10T19:35:42 IST" duration-ms="40910">
+    <test started-at="2021-07-17T14:48:50 IST" name="Default test" finished-at="2021-07-17T14:49:42 IST" duration-ms="52216">
       <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-10T19:35:01 IST" name="initialize" finished-at="2021-07-10T19:35:06 IST" duration-ms="5035" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-17T14:48:50 IST" name="initialize" finished-at="2021-07-17T14:48:55 IST" duration-ms="5174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="checkAssignLeaveWorks(java.lang.String, java.lang.String)[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-10T19:35:06 IST" name="checkAssignLeaveWorks" data-provider="getData" finished-at="2021-07-10T19:35:41 IST" duration-ms="35634" status="PASS">
+        <test-method signature="checkAssignLeaveWorks(java.lang.String, java.lang.String)[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-17T14:48:55 IST" name="checkAssignLeaveWorks" data-provider="getData" finished-at="2021-07-17T14:49:42 IST" duration-ms="46817" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAssignLeaveWorks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-10T19:35:41 IST" name="teardown" finished-at="2021-07-10T19:35:42 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@4b6e2263]" started-at="2021-07-17T14:49:42 IST" name="teardown" finished-at="2021-07-17T14:49:42 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
