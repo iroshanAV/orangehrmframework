@@ -17,6 +17,11 @@ public class AddEmployeePage {
 	By lastNameF = By.id("lastName");
 	By empIdF = By.id("employeeId");
 	By photofileF = By.id("photofile");
+	By createLoginCheckBox = By.id("chkLogin");
+	By userNameF = By.id("user_name");
+	By passwordF = By.id("user_password");
+	By confirmPasswordF = By.id("re_password");
+	By statusF  = By.id("status");
 	
 	
 	public WebElement getfirstNameF() {
@@ -39,7 +44,25 @@ public class AddEmployeePage {
 		return driver.findElement(photofileF);
 	}
 	
+	public WebElement getcreateLoginCheckBox() {
+		return driver.findElement(createLoginCheckBox);
+	}
 	
+	public WebElement getuserNameF() {
+		return driver.findElement(userNameF);
+	}
+	
+	public WebElement getpasswordF() {
+		return driver.findElement(passwordF);
+	}
+	
+	public WebElement getconfirmPasswordF() {
+		return driver.findElement(confirmPasswordF);
+	}
+	
+	public WebElement getstatusF() {
+		return driver.findElement(statusF);
+	}
 	
 	
 	
