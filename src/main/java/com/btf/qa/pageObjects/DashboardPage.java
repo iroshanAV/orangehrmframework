@@ -19,6 +19,10 @@ public class DashboardPage {
 	By myLeaveNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a");
 	
 	
+	By pimNavbar = By.id("menu_pim_viewPimModule");
+	By addEmployee = By.id("menu_pim_addEmployee");
+	
+	
 	By assignLavePageName = By.xpath("//*[@id=\"assign-leave\"]/div[1]/h1");
 	
 	
@@ -47,5 +51,14 @@ public class DashboardPage {
 	public WebElement getassignPageLeaveName() {
 		return driver.findElement(assignLavePageName);
 	}
+	
+	public WebElement getpimNavbar() {
+		return driver.findElement(pimNavbar);
+	}
+	
+	public WebElement getaddEmployee() {
+		return driver.findElement(addEmployee);
+	}
+	
 	
 }

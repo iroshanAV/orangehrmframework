@@ -10,7 +10,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.btf.qa.pageObjects.AddEmployeePage;
 import com.btf.qa.pageObjects.AssignLeavePage;
+import com.btf.qa.pageObjects.DashboardPage;
 import com.btf.qa.pageObjects.LoginPage;
 import com.btf.qa.resources.base;
 
@@ -36,10 +38,30 @@ public class CheckAddEmployeefunction extends base {
 		lp.getPassword().sendKeys(Password);
 		lp.getLogin().click();
 		
+		System.out.println("Successfully Logged in");
 		Log.info("Successfully Logged in");			
 		
-	    
+		DashboardPage dp = new DashboardPage(driver);
+		dp.getpimNavbar().click();
+		dp.getaddEmployee().click();
 		
+		
+		
+		//ENTER LOGIN DETAILS
+		AddEmployeePage aep = new AddEmployeePage(driver);
+	    aep.getfirstNameF().sendKeys("Jasonaa");
+		aep.getmiddleNameF().sendKeys("Jamesaa");
+		aep.getlastNameF().sendKeys("Smithaa");
+		
+		aep.getphotofileF().sendKeys("F:\\Projects\\samples\\smile.jpg");
+		aep.getcreateLoginCheckBox().click();
+        aep.getuserNameF().sendKeys("JasonJSaa");
+        aep.getpasswordF().sendKeys("password123");
+        aep.getconfirmPasswordF().sendKeys("password123");
+        aep.getsaveButton().click();
+        
+        System.out.println("User successfuly created");
+		Log.info("User successfuly created");
 		
 	}
 	

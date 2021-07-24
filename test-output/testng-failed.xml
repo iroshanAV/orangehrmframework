@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
+      <class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction">
         <methods>
           <include name="checkAssignLeaveWorks" invocation-numbers="0"/>
           <include name="initialize"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible -->
+      </class> <!-- com.btf.qa.BasicTestFramework.CheckAddEmployeefunction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -23,6 +23,9 @@ public class AddEmployeePage {
 	By confirmPasswordF = By.id("re_password");
 	By statusF  = By.id("status");
 	
+	By saveButton = By.id("btnSave");
+	
+	
 	
 	public WebElement getfirstNameF() {
 		return driver.findElement(firstNameF);
@@ -64,7 +67,9 @@ public class AddEmployeePage {
 		return driver.findElement(statusF);
 	}
 	
-	
+	public WebElement getsaveButton() {
+		return driver.findElement(saveButton);
+	}
 	
 	
 }
