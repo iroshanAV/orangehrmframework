@@ -16,14 +16,7 @@
 			<class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible" />
 		</classes>
 	</test>
-	
-	<test name="Check leaves can be assigned">
-
-		<classes>
-			<class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible" />
-		</classes>
-	</test>
-	
+		
 	
 	<test name="Check Employees can be added">
 
