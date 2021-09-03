@@ -1,7 +1,4 @@
-11:30:52.772 [main] INFO  com.btf.qa.resources.base - Entered name
-11:30:52.955 [main] INFO  com.btf.qa.resources.base - Entered leave type
-11:30:53.223 [main] INFO  com.btf.qa.resources.base - Entered from date
-11:31:01.534 [main] INFO  com.btf.qa.resources.base - Entered to date
-11:31:09.860 [main] INFO  com.btf.qa.resources.base - Entered duration
-11:31:18.014 [main] INFO  com.btf.qa.resources.base - Entered comment
-11:31:18.268 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
+16:55:31.863 [main] INFO  com.btf.qa.resources.base - Entered to date
+16:55:40.169 [main] INFO  com.btf.qa.resources.base - Entered duration
+16:55:48.266 [main] INFO  com.btf.qa.resources.base - Entered comment
+16:55:48.461 [main] INFO  com.btf.qa.resources.base - Entered Assign Button

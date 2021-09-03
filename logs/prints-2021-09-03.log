@@ -1,7 +1,7 @@
-17:51:22.022 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-17:51:26.510 [main] INFO  com.btf.qa.resources.base - User successfuly created
-22:53:13.809 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-22:53:26.564 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-11:30:41.611 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-11:30:50.821 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-11:30:52.772 [main] INFO  com.btf.qa.resources.base - Started filling the form
+16:55:08.716 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+16:55:11.230 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+16:55:20.775 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+16:55:22.728 [main] INFO  com.btf.qa.resources.base - Started filling the form
+16:55:22.728 [main] INFO  com.btf.qa.resources.base - Entered name
+16:55:22.888 [main] INFO  com.btf.qa.resources.base - Entered leave type
+16:55:23.470 [main] INFO  com.btf.qa.resources.base - Entered from date
