@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class base {
   
 	public WebDriver driver;
@@ -27,8 +29,10 @@ public class base {
 	
 	if(browserName.equals("chrome")) {
 		//EXECUTE IN CHROME
-		System.setProperty("webdriver.chrome.driver", "G:\\Selenium\\Drivers\\chromedriver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "G:\\Selenium\\Drivers\\chromedriver\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();		
 		driver = new ChromeDriver();
+		
 	}
 	
 	else if(browserName.equals("firefox")) {
