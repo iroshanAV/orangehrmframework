@@ -1,4 +1,5 @@
-16:55:31.863 [main] INFO  com.btf.qa.resources.base - Entered to date
-16:55:40.169 [main] INFO  com.btf.qa.resources.base - Entered duration
-16:55:48.266 [main] INFO  com.btf.qa.resources.base - Entered comment
-16:55:48.461 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
+15:27:02.355 [main] INFO  com.btf.qa.resources.base - Entered comment
+15:27:02.578 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
+15:27:17.744 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+15:27:28.788 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+15:27:32.990 [main] INFO  com.btf.qa.resources.base - User successfuly created
