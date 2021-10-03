@@ -2,6 +2,7 @@ package com.btf.qa.resources;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class base {
   
 	public WebDriver driver;
-	public Properties prop;
+	public Properties prop,prop1;
 	
 	public WebDriver initializeDriver() throws IOException {
 	prop = new Properties();
@@ -60,6 +61,14 @@ public class base {
 	}
 	
 	
+	
+	public Properties getPropertyFromTCLevel(String propFLocation) throws IOException {
+		prop1 = new Properties();
+		FileInputStream fis1 = new FileInputStream(propFLocation);
+		
+		prop1.load(fis1);
+		return prop1;
+	}
 	
 	
 	

@@ -1,93 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-18T17:30:44 IST" name="Suite" finished-at="2021-09-18T17:32:10 IST" duration-ms="86554">
+  <suite started-at="2021-10-03T19:43:10 IST" name="Default suite" finished-at="2021-10-03T19:43:31 IST" duration-ms="20241">
     <groups>
     </groups>
-    <test started-at="2021-09-18T17:30:44 IST" name="Validating Login Success" finished-at="2021-09-18T17:31:09 IST" duration-ms="25447">
-      <class name="com.btf.qa.BasicTestFramework.CheckLoginSuccess">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@6986bbaf]" started-at="2021-09-18T17:30:44 IST" name="initialize" finished-at="2021-09-18T17:31:01 IST" duration-ms="17341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="loginSuccess(java.lang.String,java.lang.String)[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@6986bbaf]" started-at="2021-09-18T17:31:01 IST" name="loginSuccess" data-provider="getData" finished-at="2021-09-18T17:31:09 IST" duration-ms="7894" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccess -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@6986bbaf]" started-at="2021-09-18T17:31:09 IST" name="teardown" finished-at="2021-09-18T17:31:09 IST" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginSuccess -->
-    </test> <!-- Validating Login Success -->
-    <test started-at="2021-09-18T17:31:09 IST" name="Check leaves can be assigned" finished-at="2021-09-18T17:31:56 IST" duration-ms="46921">
-      <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@3e30646a]" started-at="2021-09-18T17:31:09 IST" name="initialize" finished-at="2021-09-18T17:31:11 IST" duration-ms="2025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="checkAssignLeaveWorks(java.lang.String,java.lang.String)[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@3e30646a]" started-at="2021-09-18T17:31:11 IST" name="checkAssignLeaveWorks" data-provider="getData" finished-at="2021-09-18T17:31:56 IST" duration-ms="44662" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkAssignLeaveWorks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@3e30646a]" started-at="2021-09-18T17:31:56 IST" name="teardown" finished-at="2021-09-18T17:31:56 IST" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible -->
-    </test> <!-- Check leaves can be assigned -->
-    <test started-at="2021-09-18T17:31:56 IST" name="Check Employees can be added" finished-at="2021-09-18T17:32:10 IST" duration-ms="14119">
+    <test started-at="2021-10-03T19:43:10 IST" name="Default test" finished-at="2021-10-03T19:43:31 IST" duration-ms="20241">
       <class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@614df0a4]" started-at="2021-09-18T17:31:56 IST" name="initialize" finished-at="2021-09-18T17:31:58 IST" duration-ms="2152" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@45fd9a4d]" started-at="2021-10-03T19:43:10 IST" name="initialize" finished-at="2021-10-03T19:43:16 IST" duration-ms="5757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="checkAssignLeaveWorks(java.lang.String,java.lang.String)[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@614df0a4]" started-at="2021-09-18T17:31:58 IST" name="checkAssignLeaveWorks" data-provider="getData" finished-at="2021-09-18T17:32:10 IST" duration-ms="11834" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@45fd9a4d]" started-at="2021-10-03T19:43:16 IST" name="settingUpProperties" finished-at="2021-10-03T19:43:16 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingUpProperties -->
+        <test-method signature="checkAssignLeaveWorks()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@45fd9a4d]" started-at="2021-10-03T19:43:16 IST" name="checkAssignLeaveWorks" finished-at="2021-10-03T19:43:30 IST" duration-ms="14160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAssignLeaveWorks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@614df0a4]" started-at="2021-09-18T17:32:10 IST" name="teardown" finished-at="2021-09-18T17:32:10 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@45fd9a4d]" started-at="2021-10-03T19:43:30 IST" name="teardown" finished-at="2021-10-03T19:43:31 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.btf.qa.BasicTestFramework.CheckAddEmployeefunction -->
-    </test> <!-- Check Employees can be added -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
