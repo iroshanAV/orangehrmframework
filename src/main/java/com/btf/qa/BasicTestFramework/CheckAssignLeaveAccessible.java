@@ -36,7 +36,7 @@ public static Logger Log = LogManager.getLogger(base.class.getName());
 	    driver.get(prop.getProperty("url"));
         AssignLeavePage alp = new AssignLeavePage(driver); 
 		LoginPage lp = new LoginPage(driver);
-		lp.getEmail().sendKeys(Username);
+		lp.getUsername().sendKeys(Username);
 		lp.getPassword().sendKeys(Password);
 		lp.getLogin().click();
 		

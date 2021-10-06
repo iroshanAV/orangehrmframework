@@ -32,7 +32,7 @@ public class ValidateTitle extends base {
 		driver.get(prop.getProperty("url"));
         
 		LoginPage lp = new LoginPage(driver);
-		lp.getEmail().sendKeys(Username);
+		lp.getUsername().sendKeys(Username);
 		lp.getPassword().sendKeys(Password);
 		lp.getLogin().click();
 		

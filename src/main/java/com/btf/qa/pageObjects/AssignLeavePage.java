@@ -16,8 +16,7 @@ public WebDriver driver;
 	By fromDateF = By.id("assignleave_txtFromDate");
 	By toDateF   = By.id("assignleave_txtToDate");
 	By commentF = By.id("assignleave_txtComment");
-	By durationF = By.id("assignleave_duration_duration");
-	
+	By durationF = By.id("assignleave_duration_duration");	
 	By calendarF = By.xpath("//*[@id=\"frmLeaveApply\"]/fieldset/ol/li[4]/img");
 	By calendarF1 = By.xpath("//*[@id=\"frmLeaveApply\"]/fieldset/ol/li[5]/img"); 
 	

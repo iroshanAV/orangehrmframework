@@ -41,7 +41,7 @@ public class CheckAddEmployeefunction extends base {
 		LoginPage lp = new LoginPage(driver);
 		
 		//Data Driven implemented here
-		lp.getEmail().sendKeys(prop1.getProperty("username"));
+		lp.getUsername().sendKeys(prop1.getProperty("username"));
 		lp.getPassword().sendKeys(prop1.getProperty("password"));
 		lp.getLogin().click();
 

@@ -1,34 +1,40 @@
 package com.btf.qa.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
-
+	public WebDriver driver;
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
 
 	}
 
-	public WebDriver driver;
-	By signin = By.xpath("//*[@id=\"homepage\"]/header/div[1]/div/nav/ul/li[4]/a/span");
-	By title = By.xpath("//*[@id=\"content\"]/div/div/h2");
-	By NavBar = By.xpath("//*[@id=\"homepage\"]/header/div[2]/div/nav");
+	@FindBy(xpath="//*[@id=\\\"homepage\\\"]/header/div[1]/div/nav/ul/li[4]/a/span")
+	WebElement signin;
 	
+	@FindBy(xpath="//*[@id=\"content\"]/div/div/h2")
+	WebElement title;
 	
+	@FindBy(xpath="//*[@id=\"homepage\"]/header/div[2]/div/nav")
+	WebElement NavBar;
 	
+		
 
 	public WebElement getLogin() {
-		return driver.findElement(signin);
+		return signin;
 	}
 	
 	public WebElement getTitle() {
-		return driver.findElement(title);
+		return title;
 	}
 	
 	public WebElement getNavBar() {
-		return driver.findElement(NavBar);
+		return NavBar;
 	}
 	
 	

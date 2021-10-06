@@ -3,6 +3,8 @@ package com.btf.qa.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
@@ -10,33 +12,41 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	
-	By email = By.id("txtUsername");
-	By password = By.id("txtPassword");
-	By login = By.id("btnLogin");
+	@FindBy(id="txtUsername")
+    WebElement username;	
 	
-	By spanMessage = By.id("spanMessage");
+	@FindBy(id="txtPassword")
+	WebElement password;
+	
+	@FindBy(id="btnLogin")
+	WebElement login;
+	
+	
+	@FindBy(id="spanMessage")
+	WebElement spanMessage;
 	
 	
 	
-	public WebElement getEmail() {
-		return driver.findElement(email);
+	public WebElement getUsername() {
+		return username;
 	}
 	
 	
 	public WebElement getPassword() {
-		return driver.findElement(password);
+		return password;
 	}
 	
 	
 	public WebElement getLogin() {
-		return driver.findElement(login);
+		return login;
 	}
 	
 	public WebElement getSpanMessage() {
-		return driver.findElement(spanMessage);
+		return spanMessage;
 	}
 	
 }

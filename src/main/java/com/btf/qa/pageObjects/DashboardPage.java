@@ -1,8 +1,9 @@
 package com.btf.qa.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class DashboardPage {
 
@@ -10,54 +11,70 @@ public class DashboardPage {
 	
 	public DashboardPage (WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
 	}
 	
-	By assignLeaveNavigation = By.xpath("//*[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td[1]/div/a");
-	By leaveListNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[2]/div/a");
-	By timeSheetsNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[3]/div/a");
-	By applyLeaveNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[4]/div/a");
-	By myLeaveNavigation = By.xpath("//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a");
 	
 	
-	By pimNavbar = By.id("menu_pim_viewPimModule");
-	By addEmployee = By.id("menu_pim_addEmployee");
+	@FindBy(xpath="//*[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td[1]/div/a")
+	WebElement assignLeaveNavigation;
 	
+	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[2]/div/a")
+	WebElement leaveListNavigation;
 	
-	By assignLavePageName = By.xpath("//*[@id=\"assign-leave\"]/div[1]/h1");
+	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[3]/div/a")
+	WebElement timeSheetsNavigation;
 	
+	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[4]/div/a")
+	WebElement applyLeaveNavigation;
+	
+	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a")
+	WebElement myLeaveNavigation;
+	
+	@FindBy(id="menu_pim_viewPimModule")
+	WebElement pimNavbar;
+	
+	@FindBy(id="menu_pim_addEmployee")
+	WebElement addEmployee;
+	
+	@FindBy(xpath="//*[@id=\"assign-leave\"]/div[1]/h1")
+	WebElement assignLavePageName;
+	
+		
 	
 	
 	public WebElement getassignLeaveNavigation() {
-		return driver.findElement(assignLeaveNavigation);
+		return assignLeaveNavigation;
 	}
 	
 	public WebElement getleaveListNavigation() {
-		return driver.findElement(leaveListNavigation);
+		return leaveListNavigation;
 	}
 	
 	public WebElement gettimeSheetNavigation() {
-		return driver.findElement(timeSheetsNavigation);
+		return timeSheetsNavigation;
 	}
 	
 	public WebElement getapplyLeaveNavigation() {
-		return driver.findElement(applyLeaveNavigation);
+		return applyLeaveNavigation;
 	}
 	
 	public WebElement getmyLeaveNavigation() {
-		return driver.findElement(myLeaveNavigation);
+		return myLeaveNavigation;
 	}
 	
 	
 	public WebElement getassignPageLeaveName() {
-		return driver.findElement(assignLavePageName);
+		return assignLavePageName;
 	}
 	
 	public WebElement getpimNavbar() {
-		return driver.findElement(pimNavbar);
+		return pimNavbar;
 	}
 	
 	public WebElement getaddEmployee() {
-		return driver.findElement(addEmployee);
+		return addEmployee;
 	}
 	
 	
