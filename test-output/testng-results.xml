@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-06T22:50:43 IST" name="Default suite" finished-at="2021-10-06T22:51:09 IST" duration-ms="25719">
+  <suite started-at="2021-10-09T17:22:12 IST" name="Default suite" finished-at="2021-10-09T17:22:31 IST" duration-ms="18670">
     <groups>
     </groups>
-    <test started-at="2021-10-06T22:50:43 IST" name="Default test" finished-at="2021-10-06T22:51:09 IST" duration-ms="25719">
-      <class name="com.btf.qa.BasicTestFramework.ValidateNavigationBar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateNavigationBar@55322aab]" started-at="2021-10-06T22:50:43 IST" name="initialize" finished-at="2021-10-06T22:50:58 IST" duration-ms="15232" status="PASS">
+    <test started-at="2021-10-09T17:22:12 IST" name="Default test" finished-at="2021-10-09T17:22:31 IST" duration-ms="18670">
+      <class name="com.btf.qa.BasicTestFramework.HomePage">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.HomePage@55322aab]" started-at="2021-10-09T17:22:12 IST" name="initialize" finished-at="2021-10-09T17:22:21 IST" duration-ms="8326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateNavigationBar@55322aab]" started-at="2021-10-06T22:50:58 IST" name="basePageNavigation" finished-at="2021-10-06T22:51:09 IST" duration-ms="10121" status="FAIL">
+        <test-method signature="basePageNavigation()[pri:0, instance:com.btf.qa.BasicTestFramework.HomePage@55322aab]" started-at="2021-10-09T17:22:21 IST" name="basePageNavigation" finished-at="2021-10-09T17:22:31 IST" duration-ms="10111" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="homepage"]/header/div[2]/div/nav"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/div/div/h2"}
   (Session info: chrome=94.0.4606.71)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AVIS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 165a48504aeb73fe10c0e123e1810cd7
-*** Element info: {Using=xpath, value=//*[@id="homepage"]/header/div[2]/div/nav}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59934}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c697d4638a5fac87c049f55c24dbc43
+*** Element info: {Using=xpath, value=//*[@id="content"]/div/div/h2}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="homepage"]/header/div[2]/div/nav"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/div/div/h2"}
   (Session info: chrome=94.0.4606.71)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AVIS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 165a48504aeb73fe10c0e123e1810cd7
-*** Element info: {Using=xpath, value=//*[@id="homepage"]/header/div[2]/div/nav}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59934}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c697d4638a5fac87c049f55c24dbc43
+*** Element info: {Using=xpath, value=//*[@id="content"]/div/div/h2}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -51,8 +51,8 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy27.isDisplayed(Unknown Source)
-at com.btf.qa.BasicTestFramework.ValidateNavigationBar.basePageNavigation(ValidateNavigationBar.java:33)
+at com.sun.proxy.$Proxy27.getText(Unknown Source)
+at com.btf.qa.BasicTestFramework.HomePage.basePageNavigation(HomePage.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,11 +87,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateNavigationBar@55322aab]" started-at="2021-10-06T22:51:09 IST" name="teardown" finished-at="2021-10-06T22:51:09 IST" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.HomePage@55322aab]" started-at="2021-10-09T17:22:31 IST" name="teardown" finished-at="2021-10-09T17:22:31 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.btf.qa.BasicTestFramework.ValidateNavigationBar -->
+      </class> <!-- com.btf.qa.BasicTestFramework.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

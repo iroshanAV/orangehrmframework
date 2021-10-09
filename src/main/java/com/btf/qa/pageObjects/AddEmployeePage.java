@@ -1,71 +1,103 @@
 package com.btf.qa.pageObjects;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class AddEmployeePage {
 	public WebDriver driver;
 
 	public AddEmployeePage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
+		
 	}
+	
+	@FindBy(id="firstName")
+    WebElement firstNameF;
+	
+	@FindBy(id="middleName")
+	WebElement middleNameF;
+	
+	@FindBy(id="lastName")
+	WebElement lastNameF;
+	
+	@FindBy(id="employeeId")
+	WebElement empIdF;
+	
+	@FindBy(id="photofile")
+	WebElement photofileF;
+	
+	@FindBy(id="chkLogin")
+	WebElement createLoginCheckBox;
+	
+	@FindBy(id="user_name")
+	WebElement userNameF;
+	
+	@FindBy(id="user_password")
+	WebElement passwordF;
+	
+	@FindBy(id="re_password")
+	WebElement confirmPasswordF;
+	
+	@FindBy(id="status")
+	WebElement statusF;
+	
+	@FindBy(id="btnSave")
+	WebElement saveButton;
+	
+//	By firstNameF = By.id("firstName");
 
-	By firstNameF = By.id("firstName");
-	By middleNameF = By.id("middleName");
-	By lastNameF = By.id("lastName");
-	By empIdF = By.id("employeeId");
-	By photofileF = By.id("photofile");
-	By createLoginCheckBox = By.id("chkLogin");
-	By userNameF = By.id("user_name");
-	By passwordF = By.id("user_password");
-	By confirmPasswordF = By.id("re_password");
-	By statusF = By.id("status");
 
-	By saveButton = By.id("btnSave");
+//	public WebElement getfirstNameF() {
+//		return driver.findElement(firstNameF);
+//	}
 
 	public WebElement getfirstNameF() {
-		return driver.findElement(firstNameF);
+		return firstNameF;
 	}
-
+	
 	public WebElement getmiddleNameF() {
-		return driver.findElement(middleNameF);
+		return middleNameF;
 	}
 
 	public WebElement getlastNameF() {
-		return driver.findElement(lastNameF);
+		return lastNameF;
 	}
 
 	public WebElement getempIdF() {
-		return driver.findElement(empIdF);
+		return empIdF;
 	}
 
 	public WebElement getphotofileF() {
-		return driver.findElement(photofileF);
+		return photofileF;
 	}
 
 	public WebElement getcreateLoginCheckBox() {
-		return driver.findElement(createLoginCheckBox);
+		return createLoginCheckBox;
 	}
 
 	public WebElement getuserNameF() {
-		return driver.findElement(userNameF);
+		return userNameF;
 	}
 
 	public WebElement getpasswordF() {
-		return driver.findElement(passwordF);
+		return passwordF;
 	}
 
 	public WebElement getconfirmPasswordF() {
-		return driver.findElement(confirmPasswordF);
+		return confirmPasswordF;
 	}
 
 	public WebElement getstatusF() {
-		return driver.findElement(statusF);
+		return statusF;
 	}
 
 	public WebElement getsaveButton() {
-		return driver.findElement(saveButton);
+		return saveButton;
 	}
 
 }

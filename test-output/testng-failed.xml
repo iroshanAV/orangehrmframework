@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.btf.qa.BasicTestFramework.ValidateNavigationBar">
+      <class name="com.btf.qa.BasicTestFramework.HomePage">
         <methods>
-          <include name="basePageNavigation"/>
           <include name="teardown"/>
+          <include name="basePageNavigation"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.ValidateNavigationBar -->
+      </class> <!-- com.btf.qa.BasicTestFramework.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

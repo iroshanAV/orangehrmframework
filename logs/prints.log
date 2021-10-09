@@ -1,1 +1,3 @@
-22:50:54.184 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+17:11:10.343 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+17:11:16.540 [main] INFO  com.btf.qa.resources.base - User successfuly created
+17:22:16.870 [main] INFO  com.btf.qa.resources.base - Driver is initialized
