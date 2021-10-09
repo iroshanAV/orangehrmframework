@@ -32,10 +32,10 @@ public WebDriver driver;
 	@FindBy(id="assignleave_duration_duration")
 	WebElement durationF;
 	
-	@FindBy(xpath="//*[@id=\\\"frmLeaveApply\\\"]/fieldset/ol/li[4]/img")
+	@FindBy(id="assignleave_txtFromDate")
 	WebElement calendarF;
 	
-	@FindBy(id="//*[@id=\\\"frmLeaveApply\\\"]/fieldset/ol/li[5]/img")
+	@FindBy(id="assignleave_txtToDate")
 	WebElement calendarF1;
 	
 	@FindBy(id="assignBtn")
