@@ -22,7 +22,7 @@ public class CheckAddEmployeefunction extends base {
 
 	@BeforeClass
 	public void settingUpProperties() throws IOException {
-		prop1 = getPropertyFromTCLevel("C:\\\\Users\\\\irosh\\\\eclipse-workspace\\\\orangehrmframework\\\\src\\\\main\\\\java\\\\com\\\\btf\\\\qa\\\\BasicTestFramework\\\\CheckAddEmployeefunction.properties");
+		prop1 = getPropertyFromTCLevel("C:\\\\Users\\\\irosh\\\\eclipse-workspace\\\\orangehrmframework\\\\src\\\\main\\\\java\\\\com\\\\btf\\\\qa\\\\BasicTestFramework\\\\basics.properties");
 	}
 	
 	
