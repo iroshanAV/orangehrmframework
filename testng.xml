@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
- 
- 
+	<listeners>
+		<listener
+			class-name="com.btf.qa.BasicTestFramework.Listeners" />
+	</listeners>
+
 	<test name="Validating Login Success">
 		<classes>
 			<class name="com.btf.qa.BasicTestFramework.CheckLoginSuccess" />
@@ -13,17 +16,35 @@
 	<test name="Check leaves can be assigned">
 
 		<classes>
-			<class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible" />
+			<class
+				name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible" />
 		</classes>
 	</test>
-		
-	
+
+
 	<test name="Check Employees can be added">
 
 		<classes>
-			<class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction" />
+			<class
+				name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction" />
 		</classes>
 	</test>
 
+	<test name="Check Unsuccessful login">
+
+		<classes>
+			<class
+				name="com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage" />
+		</classes>
+	</test>
+	
+	
+	<test name="Validate title">
+
+		<classes>
+			<class
+				name="com.btf.qa.BasicTestFramework.ValidateTitle" />
+		</classes>
+	</test>
 
 </suite> <!-- Suite -->

@@ -1,7 +1,7 @@
-18:57:21.141 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
-18:58:22.230 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-18:58:51.779 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-18:59:01.317 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
-18:59:38.597 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-18:59:49.022 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-18:59:50.731 [main] INFO  com.btf.qa.resources.base - Started filling the form
+23:42:46.273 [main] INFO  com.btf.qa.resources.base - Entered comment
+23:42:46.448 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
+23:42:57.018 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+23:43:25.751 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+23:43:31.161 [main] INFO  com.btf.qa.resources.base - User successfuly created
+23:43:33.624 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+23:48:38.224 [main] INFO  com.btf.qa.resources.base - Driver is initialized

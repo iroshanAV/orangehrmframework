@@ -1,0 +1,5 @@
+23:54:04.553 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+23:54:20.852 [main] INFO  com.btf.qa.resources.base - Login failedProxy element for: DefaultElementLocator 'By.xpath: //span[@text='Invalid Credentials']'
+23:56:20.198 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+23:56:26.922 [main] INFO  com.btf.qa.resources.base - Current Text[[ChromeDriver: chrome on WINDOWS (445064268d3bc9678a600a52df480c20)] -> id: spanMessage]
+00:04:18.408 [main] INFO  com.btf.qa.resources.base - Driver is initialized

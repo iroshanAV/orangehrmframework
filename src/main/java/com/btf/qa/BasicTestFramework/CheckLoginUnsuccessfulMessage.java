@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
 import com.btf.qa.pageObjects.LoginPage;
 import com.btf.qa.resources.base;
 
+import junit.framework.Assert;
+
 public class CheckLoginUnsuccessfulMessage extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
 
@@ -38,12 +40,16 @@ public class CheckLoginUnsuccessfulMessage extends base {
 
 		String expectedM = "Invalid credentials";
 		WebElement currentM = lp.getSpanMessage();
-
-		if (!currentM.equals(expectedM)) {
-			Log.info("Login failed" + currentM);
-		}
-
-		Log.info("Login attempt failed");
+		String actualText  = currentM.getText();
+		System.out.print(actualText);
+		
+		
+		Assert.assertEquals(expectedM, currentM);
+//		if (!currentM.equals(expectedM)) {
+//			Log.info("Login failed" + currentM);
+//		}
+//
+//		Log.info("Login attempt failed");
 	}
 
 	@AfterTest

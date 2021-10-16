@@ -30,7 +30,7 @@ public class CheckLoginSuccess extends base {
 	}
 
 	@Test
-	public void loginSuccess(String Username, String Password) throws IOException {
+	public void loginSuccess() throws IOException {
 
 		driver.get(prop.getProperty("url"));
 

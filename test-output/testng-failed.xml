@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.btf.qa.BasicTestFramework.ValidateTitle">
+      <class name="com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage">
         <methods>
           <include name="teardown"/>
-          <include name="basePageNavigation"/>
           <include name="initialize"/>
-          <include name="settingUpProperties"/>
+          <include name="loginUnsuccessful"/>
         </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.ValidateTitle -->
+      </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
