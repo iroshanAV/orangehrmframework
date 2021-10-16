@@ -108,15 +108,7 @@ public class CheckAssignLeaveAccessible extends base {
 
 	}
 
-	@DataProvider
-	public Object[][] getData() {
-		Object[][] data = new Object[1][2];
-
-		// 1st set of data
-		data[0][0] = "Admin";
-		data[0][1] = "admin123";
-		return data;
-	}
+	
 
 	@AfterTest
 	public void teardown() {
