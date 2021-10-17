@@ -16,6 +16,7 @@ import com.btf.qa.resources.base;
 
 public class CheckLoginSuccess extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
+    public WebDriver driver;
 
 	@BeforeClass
 	public void settingUpProperties() throws IOException {

@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Validating Login Success(failed)">
+  <listeners>
+    <listener class-name="com.btf.qa.BasicTestFramework.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Check Unsuccessful login(failed)">
     <classes>
-      <class name="com.btf.qa.BasicTestFramework.CheckLoginSuccess">
+      <class name="com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage">
         <methods>
-          <include name="loginSuccess"/>
-          <include name="initialize"/>
           <include name="teardown"/>
-        </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginSuccess -->
-    </classes>
-  </test> <!-- Validating Login Success(failed) -->
-  <test thread-count="5" name="Check leaves can be assigned(failed)">
-    <classes>
-      <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
-        <methods>
-          <include name="checkAssignLeaveWorks"/>
           <include name="initialize"/>
-          <include name="teardown"/>
+          <include name="loginUnsuccessful"/>
         </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible -->
+      </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage -->
     </classes>
-  </test> <!-- Check leaves can be assigned(failed) -->
-  <test thread-count="5" name="Check Employees can be added(failed)">
-    <classes>
-      <class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction">
-        <methods>
-          <include name="initialize"/>
-          <include name="checkAssignLeaveWorks"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.btf.qa.BasicTestFramework.CheckAddEmployeefunction -->
-    </classes>
-  </test> <!-- Check Employees can be added(failed) -->
+  </test> <!-- Check Unsuccessful login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

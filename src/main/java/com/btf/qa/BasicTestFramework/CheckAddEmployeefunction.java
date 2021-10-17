@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -19,6 +20,7 @@ import com.btf.qa.resources.base;
 
 public class CheckAddEmployeefunction extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
+    public WebDriver driver;
 
 	@BeforeClass
 	public void settingUpProperties() throws IOException {

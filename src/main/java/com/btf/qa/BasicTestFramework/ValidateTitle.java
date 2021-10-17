@@ -17,6 +17,7 @@ import com.btf.qa.resources.base;
 public class ValidateTitle extends base {
 
 	public static Logger Log = LogManager.getLogger(base.class.getName());
+    public WebDriver driver;
 
 	@BeforeClass
 	public void settingUpProperties() throws IOException {

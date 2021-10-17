@@ -19,7 +19,7 @@ import junit.framework.Assert;
 
 public class CheckLoginUnsuccessfulMessage extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
-
+    public WebDriver driver;
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -38,11 +38,8 @@ public class CheckLoginUnsuccessfulMessage extends base {
 		lp.getPassword().sendKeys("test");
 		lp.getLogin().click();
 
-		String expectedM = "Invalid credentials";
-		WebElement currentM = lp.getSpanMessage();
-		String actualText  = currentM.getText();
-		System.out.print(actualText);
-		
+		String expectedM = "Invalid credentialsss";
+		String currentM = lp.getSpanMessage().getText();		
 		
 		Assert.assertEquals(expectedM, currentM);
 //		if (!currentM.equals(expectedM)) {
