@@ -1,1 +1,5 @@
-14:18:20.039 [main] INFO  com.btf.qa.resources.base - User successfuly created
+14:21:04.930 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+14:21:12.157 [main] INFO  com.btf.qa.resources.base - User successfuly created
+14:21:20.439 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+14:21:28.472 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+14:21:38.438 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
