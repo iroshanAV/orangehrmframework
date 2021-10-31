@@ -15,31 +15,31 @@ public WebDriver driver;
 	
 	
 	@FindBy(id="assignleave_txtEmployee_empName")
-	WebElement empNameF;
+	private WebElement empNameF;
 	
 	@FindBy(id="assignleave_txtLeaveType")
-	WebElement leaveTypeF;
+	private WebElement leaveTypeF;
 	
 	@FindBy(id="assignleave_txtFromDate")
-	WebElement fromDateF;
+	private WebElement fromDateF;
 	
 	@FindBy(id="assignleave_txtToDate")
-	WebElement toDateF;
+	private WebElement toDateF;
 	
 	@FindBy(id="assignleave_txtComment")
-	WebElement commentF;
+	private WebElement commentF;
 	
 	@FindBy(id="assignleave_duration_duration")
-	WebElement durationF;
+	private WebElement durationF;
 	
 	@FindBy(id="assignleave_txtFromDate")
-	WebElement calendarF;
+	private WebElement calendarF;
 	
 	@FindBy(id="assignleave_txtToDate")
-	WebElement calendarF1;
+	private WebElement calendarF1;
 	
 	@FindBy(id="assignBtn")
-	WebElement assignB;
+	private WebElement assignB;
 	
 
 	

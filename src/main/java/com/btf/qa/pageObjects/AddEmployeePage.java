@@ -17,37 +17,41 @@ public class AddEmployeePage {
 	}
 	
 	@FindBy(id="firstName")
-    WebElement firstNameF;
+    private WebElement firstNameF;
 	
 	@FindBy(id="middleName")
-	WebElement middleNameF;
+	private WebElement middleNameF;
 	
 	@FindBy(id="lastName")
-	WebElement lastNameF;
+	private WebElement lastNameF;
 	
 	@FindBy(id="employeeId")
-	WebElement empIdF;
+	private WebElement empIdF;
 	
 	@FindBy(id="photofile")
-	WebElement photofileF;
+	private WebElement photofileF;
 	
 	@FindBy(id="chkLogin")
-	WebElement createLoginCheckBox;
+	private WebElement createLoginCheckBox;
 	
 	@FindBy(id="user_name")
-	WebElement userNameF;
+	private WebElement userNameF;
 	
 	@FindBy(id="user_password")
-	WebElement passwordF;
+	private WebElement passwordF;
 	
 	@FindBy(id="re_password")
-	WebElement confirmPasswordF;
+	private WebElement confirmPasswordF;
 	
 	@FindBy(id="status")
-	WebElement statusF;
+	private WebElement statusF;
 	
 	@FindBy(id="btnSave")
-	WebElement saveButton;
+	private WebElement saveButton;
+	
+	
+	@FindBy(xpath ="//div[@id='profile-pic']/h1")
+	private WebElement profileName;
 	
 //	By firstNameF = By.id("firstName");
 
@@ -98,6 +102,10 @@ public class AddEmployeePage {
 
 	public WebElement getsaveButton() {
 		return saveButton;
+	}
+	
+	public WebElement getprofileName() {
+		return profileName;
 	}
 
 }

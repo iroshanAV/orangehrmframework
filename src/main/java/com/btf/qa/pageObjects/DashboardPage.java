@@ -18,28 +18,28 @@ public class DashboardPage {
 	
 	
 	@FindBy(xpath="//*[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td[1]/div/a")
-	WebElement assignLeaveNavigation;
+    private WebElement assignLeaveNavigation;
 	
 	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[2]/div/a")
-	WebElement leaveListNavigation;
+	private WebElement leaveListNavigation;
 	
 	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[3]/div/a")
-	WebElement timeSheetsNavigation;
+	private WebElement timeSheetsNavigation;
 	
 	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[4]/div/a")
-	WebElement applyLeaveNavigation;
+	private WebElement applyLeaveNavigation;
 	
 	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a")
-	WebElement myLeaveNavigation;
+	private WebElement myLeaveNavigation;
 	
 	@FindBy(id="menu_pim_viewPimModule")
-	WebElement pimNavbar;
+	private WebElement pimNavbar;
 	
 	@FindBy(id="menu_pim_addEmployee")
-	WebElement addEmployee;
+	private WebElement addEmployee;
 	
 	@FindBy(xpath="//*[@id=\"assign-leave\"]/div[1]/h1")
-	WebElement assignLavePageName;
+	private WebElement assignLavePageName;
 	
 		
 	

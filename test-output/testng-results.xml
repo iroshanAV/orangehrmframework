@@ -2,76 +2,76 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-17T13:07:54 IST" name="Suite" finished-at="2021-10-17T13:10:02 IST" duration-ms="128516">
+  <suite started-at="2021-10-31T13:21:26 IST" name="Suite" finished-at="2021-10-31T13:23:19 IST" duration-ms="113204">
     <groups>
     </groups>
-    <test started-at="2021-10-17T13:07:54 IST" name="Validating Login Success" finished-at="2021-10-17T13:08:10 IST" duration-ms="15968">
+    <test started-at="2021-10-31T13:21:26 IST" name="Validating Login Success" finished-at="2021-10-31T13:21:44 IST" duration-ms="17974">
       <class name="com.btf.qa.BasicTestFramework.CheckLoginSuccess">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-17T13:07:54 IST" name="initialize" finished-at="2021-10-17T13:07:57 IST" duration-ms="3142" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-31T13:21:26 IST" name="initialize" finished-at="2021-10-31T13:21:33 IST" duration-ms="7544" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-17T13:07:57 IST" name="settingUpProperties" finished-at="2021-10-17T13:07:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-31T13:21:33 IST" name="settingUpProperties" finished-at="2021-10-31T13:21:33 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingUpProperties -->
-        <test-method signature="loginSuccess()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-17T13:07:57 IST" name="loginSuccess" finished-at="2021-10-17T13:08:10 IST" duration-ms="12580" status="PASS">
+        <test-method signature="loginSuccess()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-31T13:21:33 IST" name="loginSuccess" finished-at="2021-10-31T13:21:43 IST" duration-ms="10004" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccess -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-17T13:08:10 IST" name="teardown" finished-at="2021-10-17T13:08:10 IST" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginSuccess@59d2103b]" started-at="2021-10-31T13:21:44 IST" name="teardown" finished-at="2021-10-31T13:21:44 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginSuccess -->
     </test> <!-- Validating Login Success -->
-    <test started-at="2021-10-17T13:08:10 IST" name="Check leaves can be assigned" finished-at="2021-10-17T13:09:00 IST" duration-ms="49987">
+    <test started-at="2021-10-31T13:21:44 IST" name="Check leaves can be assigned" finished-at="2021-10-31T13:22:35 IST" duration-ms="50595">
       <class name="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-17T13:08:10 IST" name="initialize" finished-at="2021-10-17T13:08:12 IST" duration-ms="1749" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-31T13:21:44 IST" name="initialize" finished-at="2021-10-31T13:21:48 IST" duration-ms="3410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-17T13:08:12 IST" name="settingUpProperties" finished-at="2021-10-17T13:08:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-31T13:21:48 IST" name="settingUpProperties" finished-at="2021-10-31T13:21:48 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingUpProperties -->
-        <test-method signature="checkAssignLeaveWorks()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-17T13:08:12 IST" name="checkAssignLeaveWorks" finished-at="2021-10-17T13:09:00 IST" duration-ms="48044" status="PASS">
+        <test-method signature="checkAssignLeaveWorks()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-31T13:21:48 IST" name="checkAssignLeaveWorks" finished-at="2021-10-31T13:22:35 IST" duration-ms="47066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAssignLeaveWorks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-17T13:09:00 IST" name="teardown" finished-at="2021-10-17T13:09:00 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible@64beebb7]" started-at="2021-10-31T13:22:35 IST" name="teardown" finished-at="2021-10-31T13:22:35 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible -->
     </test> <!-- Check leaves can be assigned -->
-    <test started-at="2021-10-17T13:09:01 IST" name="Check Employees can be added" finished-at="2021-10-17T13:09:33 IST" duration-ms="32710">
+    <test started-at="2021-10-31T13:22:35 IST" name="Check Employees can be added" finished-at="2021-10-31T13:22:58 IST" duration-ms="23237">
       <class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@29ef6856]" started-at="2021-10-17T13:09:01 IST" name="initialize" finished-at="2021-10-17T13:09:03 IST" duration-ms="2182" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@ab7a938]" started-at="2021-10-31T13:22:35 IST" name="initialize" finished-at="2021-10-31T13:22:38 IST" duration-ms="2403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@29ef6856]" started-at="2021-10-17T13:09:03 IST" name="settingUpProperties" finished-at="2021-10-17T13:09:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@ab7a938]" started-at="2021-10-31T13:22:38 IST" name="settingUpProperties" finished-at="2021-10-31T13:22:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingUpProperties -->
-        <test-method signature="checkAssignLeaveWorks()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@29ef6856]" started-at="2021-10-17T13:09:03 IST" name="checkAssignLeaveWorks" finished-at="2021-10-17T13:09:33 IST" duration-ms="30430" status="PASS">
+        <test-method signature="checkAddEmployeeWorks()[pri:2, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@ab7a938]" started-at="2021-10-31T13:22:38 IST" name="checkAddEmployeeWorks" finished-at="2021-10-31T13:22:58 IST" duration-ms="20729" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAssignLeaveWorks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@29ef6856]" started-at="2021-10-17T13:09:33 IST" name="teardown" finished-at="2021-10-17T13:09:33 IST" duration-ms="84" status="PASS">
+        </test-method> <!-- checkAddEmployeeWorks -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckAddEmployeefunction@ab7a938]" started-at="2021-10-31T13:22:58 IST" name="teardown" finished-at="2021-10-31T13:22:58 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.btf.qa.BasicTestFramework.CheckAddEmployeefunction -->
     </test> <!-- Check Employees can be added -->
-    <test started-at="2021-10-17T13:09:33 IST" name="Check Unsuccessful login" finished-at="2021-10-17T13:09:49 IST" duration-ms="15341">
+    <test started-at="2021-10-31T13:22:58 IST" name="Check Unsuccessful login" finished-at="2021-10-31T13:23:07 IST" duration-ms="8301">
       <class name="com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@76ba13c]" started-at="2021-10-17T13:09:33 IST" name="initialize" finished-at="2021-10-17T13:09:35 IST" duration-ms="1620" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@eb6449b]" started-at="2021-10-31T13:22:58 IST" name="initialize" finished-at="2021-10-31T13:23:01 IST" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="loginUnsuccessful()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@76ba13c]" started-at="2021-10-17T13:09:35 IST" name="loginUnsuccessful" finished-at="2021-10-17T13:09:48 IST" duration-ms="13292" status="FAIL">
+        <test-method signature="loginUnsuccessful()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@eb6449b]" started-at="2021-10-31T13:23:01 IST" name="loginUnsuccessful" finished-at="2021-10-31T13:23:06 IST" duration-ms="5769" status="FAIL">
           <exception class="junit.framework.ComparisonFailure">
             <message>
               <![CDATA[expected:<Invalid credentials[ss]> but was:<Invalid credentials[]>]]>
@@ -115,27 +115,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUnsuccessful -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@76ba13c]" started-at="2021-10-17T13:09:49 IST" name="teardown" finished-at="2021-10-17T13:09:49 IST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage@eb6449b]" started-at="2021-10-31T13:23:07 IST" name="teardown" finished-at="2021-10-31T13:23:07 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage -->
     </test> <!-- Check Unsuccessful login -->
-    <test started-at="2021-10-17T13:09:49 IST" name="Validate title" finished-at="2021-10-17T13:10:02 IST" duration-ms="13655">
+    <test started-at="2021-10-31T13:23:07 IST" name="Validate title" finished-at="2021-10-31T13:23:19 IST" duration-ms="12121">
       <class name="com.btf.qa.BasicTestFramework.ValidateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@410ae9a3]" started-at="2021-10-17T13:09:49 IST" name="initialize" finished-at="2021-10-17T13:09:51 IST" duration-ms="2174" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@319988b0]" started-at="2021-10-31T13:23:07 IST" name="initialize" finished-at="2021-10-31T13:23:09 IST" duration-ms="2308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@410ae9a3]" started-at="2021-10-17T13:09:51 IST" name="settingUpProperties" finished-at="2021-10-17T13:09:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="settingUpProperties()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@319988b0]" started-at="2021-10-31T13:23:09 IST" name="settingUpProperties" finished-at="2021-10-31T13:23:09 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingUpProperties -->
-        <test-method signature="basePageNavigation()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@410ae9a3]" started-at="2021-10-17T13:09:51 IST" name="basePageNavigation" finished-at="2021-10-17T13:10:02 IST" duration-ms="11296" status="PASS">
+        <test-method signature="basePageNavigation()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@319988b0]" started-at="2021-10-31T13:23:09 IST" name="basePageNavigation" finished-at="2021-10-31T13:23:19 IST" duration-ms="9390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@410ae9a3]" started-at="2021-10-17T13:10:02 IST" name="teardown" finished-at="2021-10-17T13:10:02 IST" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.btf.qa.BasicTestFramework.ValidateTitle@319988b0]" started-at="2021-10-31T13:23:19 IST" name="teardown" finished-at="2021-10-31T13:23:19 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

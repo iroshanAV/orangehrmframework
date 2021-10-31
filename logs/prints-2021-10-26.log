@@ -1,0 +1,6 @@
+14:47:29.331 [TestNG-test=Check Employees can be added-1] INFO  com.btf.qa.resources.base - Successfully Logged in
+14:47:34.563 [TestNG-test=Check Employees can be added-1] INFO  com.btf.qa.resources.base - User successfuly created
+14:47:37.099 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+14:47:44.664 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+14:47:53.284 [TestNG-test=Validate title-1] INFO  com.btf.qa.resources.base - Successfully validated the title
+22:33:55.769 [main] INFO  com.btf.qa.resources.base - Driver is initialized

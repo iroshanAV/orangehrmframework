@@ -15,13 +15,13 @@ public class LandingPage {
 	}
 
 	@FindBy(xpath="//*[@id=\\\"homepage\\\"]/header/div[1]/div/nav/ul/li[4]/a/span")
-	WebElement signin;
+	private WebElement signin;
 	
 	@FindBy(xpath="//*[@id=\"content\"]/div/div/h2")
-	WebElement title;
+	private WebElement title;
 	
 	@FindBy(xpath="//*[@id=\"homepage\"]/header/div[2]/div/nav")
-	WebElement NavBar;
+	private WebElement NavBar;
 	
 		
 

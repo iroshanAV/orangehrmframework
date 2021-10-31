@@ -16,17 +16,17 @@ public class LoginPage {
 	
 	
 	@FindBy(id="txtUsername")
-    WebElement username;	
+	private WebElement username;	
 	
 	@FindBy(id="txtPassword")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(id="btnLogin")
-	WebElement login;
+	private WebElement login;
 	
 	
 	@FindBy(id="spanMessage")
-	WebElement spanMessage;
+	private WebElement spanMessage;
 	
 	
 	

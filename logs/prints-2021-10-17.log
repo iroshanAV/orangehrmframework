@@ -1,7 +1,5 @@
-13:08:35.995 [main] INFO  com.btf.qa.resources.base - Entered to date
-13:08:44.284 [main] INFO  com.btf.qa.resources.base - Entered duration
-13:08:52.433 [main] INFO  com.btf.qa.resources.base - Entered comment
-13:08:52.658 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
-13:09:03.201 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-13:09:25.154 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-13:09:33.633 [main] INFO  com.btf.qa.resources.base - User successfuly created
+14:46:50.066 [TestNG-test=Check leaves can be assigned-1] INFO  com.btf.qa.resources.base - Entered to date
+14:46:58.373 [TestNG-test=Check leaves can be assigned-1] INFO  com.btf.qa.resources.base - Entered duration
+14:47:06.525 [TestNG-test=Check leaves can be assigned-1] INFO  com.btf.qa.resources.base - Entered comment
+14:47:06.746 [TestNG-test=Check leaves can be assigned-1] INFO  com.btf.qa.resources.base - Entered Assign Button
+14:47:17.332 [main] INFO  com.btf.qa.resources.base - Driver is initialized
