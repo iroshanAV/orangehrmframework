@@ -53,6 +53,9 @@ public class AddEmployeePage {
 	@FindBy(xpath ="//div[@id='profile-pic']/h1")
 	private WebElement profileName;
 	
+	@FindBy(xpath="//span[text()='Required']")
+	private WebElement requiredSpanTag;
+    	
 //	By firstNameF = By.id("firstName");
 
 
@@ -106,6 +109,10 @@ public class AddEmployeePage {
 	
 	public WebElement getprofileName() {
 		return profileName;
+	}
+	
+	public WebElement getSpanRequiredMessage() {
+		return requiredSpanTag;
 	}
 
 }

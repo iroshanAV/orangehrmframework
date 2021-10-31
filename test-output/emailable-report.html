@@ -8,29 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Validating Login Success</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,974</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Check leaves can be assigned</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">50,595</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Check Employees can be added</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,237</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">Check Unsuccessful login</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,301</td><td></td><td></td></tr>
-<tr><td><a href="#t4">Validate title</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,121</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">112,228</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">25,977</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validating Login Success &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.btf.qa.BasicTestFramework.CheckLoginSuccess</td><td><a href="#m0">loginSuccess</a></td><td rowspan="1">1635666693995</td><td rowspan="1">10004</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Check leaves can be assigned &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible</td><td><a href="#m1">checkAssignLeaveWorks</a></td><td rowspan="1">1635666708267</td><td rowspan="1">47066</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Check Employees can be added &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction</td><td><a href="#m2">checkAddEmployeeWorks</a></td><td rowspan="1">1635666758036</td><td rowspan="1">20729</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">Check Unsuccessful login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage</td><td><a href="#m3">loginUnsuccessful</a></td><td rowspan="1">1635666781129</td><td rowspan="1">5769</td></tr></tbody>
-<tbody id="t4"><tr><th colspan="4">Validate title &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.btf.qa.BasicTestFramework.ValidateTitle</td><td><a href="#m4">basePageNavigation</a></td><td rowspan="1">1635666789733</td><td rowspan="1">9390</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction</td><td><a href="#m0">checkAddEmployeeWorks</a></td><td rowspan="1">1635670096751</td><td rowspan="1">9189</td></tr><tr class="passedeven"><td><a href="#m1">checkEmptyAssignLeaveErrors</a></td><td rowspan="1">1635670084130</td><td rowspan="1">12610</td></tr></tbody>
 </table>
-<h2>Validating Login Success</h2><h3 id="m0">com.btf.qa.BasicTestFramework.CheckLoginSuccess#loginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Check leaves can be assigned</h2><h3 id="m1">com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible#checkAssignLeaveWorks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Check Employees can be added</h2><h3 id="m2">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction#checkAddEmployeeWorks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Check Unsuccessful login</h2><h3 id="m3">com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage#loginUnsuccessful</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.ComparisonFailure: expected:&lt;Invalid credentials[ss]&gt; but was:&lt;Invalid credentials[]&gt;
-	at junit.framework.Assert.assertEquals(Assert.java:100)
-	at junit.framework.Assert.assertEquals(Assert.java:107)
-	at com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage.loginUnsuccessful(CheckLoginUnsuccessfulMessage.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Validate title</h2><h3 id="m4">com.btf.qa.BasicTestFramework.ValidateTitle#basePageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction#checkAddEmployeeWorks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction#checkEmptyAssignLeaveErrors</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
