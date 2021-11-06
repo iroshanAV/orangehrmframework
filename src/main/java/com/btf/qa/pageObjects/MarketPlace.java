@@ -13,12 +13,54 @@ public class MarketPlace {
 		PageFactory.initElements(driver, this);	
 	}
 	
+	//LDAP Button
 	@FindBy(id="buyBtn1")
 	private WebElement ldapButton;
 	
 	
+	//Intergration with Toggl
+	@FindBy(id="installButton2")
+	private WebElement installBtn2;
+	
+	
+	@FindBy(id="email")
+	private WebElement alertEmail;
+	
+	@FindBy(id="contactNumber")
+	private WebElement alertContactNumber;
+	
+	@FindBy(id="organization")
+	private WebElement alertOrganization;
+	
+	@FindBy(id="modal_confirm_buy")
+	private WebElement alertConfirmBuyBtn;
+	
+	@FindBy(id="menu")
+	private WebElement successMessage;
+	
+	
 	public WebElement getldapButton() {
 		return ldapButton;
+	}
+	
+	public WebElement getAlertEmail() {
+		return alertEmail;
+	}
+	
+	public WebElement getAlertContactNumber() {
+		return alertContactNumber;
+	}
+	
+	public WebElement getAlertOrganization() {
+		return alertOrganization;
+	}
+	
+	public WebElement getAlertConfirmBuyBtn() {
+		return alertConfirmBuyBtn;
+	}
+	
+	public WebElement getSuccessMessage() {
+		return successMessage;
 	}
 	
 	

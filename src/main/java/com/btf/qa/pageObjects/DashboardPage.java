@@ -41,7 +41,8 @@ public class DashboardPage {
 	@FindBy(xpath="//*[@id=\"assign-leave\"]/div[1]/h1")
 	private WebElement assignLavePageName;
 	
-		
+	@FindBy(id="MP_link")	
+	private WebElement marketPageButton;
 	
 	
 	public WebElement getassignLeaveNavigation() {
@@ -77,5 +78,8 @@ public class DashboardPage {
 		return addEmployee;
 	}
 	
+	public WebElement getMarketPlaceButton() {
+		return marketPageButton;
+	}
 	
 }
