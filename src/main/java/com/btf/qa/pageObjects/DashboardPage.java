@@ -41,7 +41,7 @@ public class DashboardPage {
 	@FindBy(xpath="//*[@id=\"assign-leave\"]/div[1]/h1")
 	private WebElement assignLavePageName;
 	
-	@FindBy(id="MP_link")	
+	@FindBy(id="MP_link" )
 	private WebElement marketPageButton;
 	
 	

@@ -1,6 +1,7 @@
 package com.btf.qa.BasicTestFramework;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.btf.qa.pageObjects.DashboardPage;
 import com.btf.qa.pageObjects.LoginPage;
@@ -60,9 +62,29 @@ public class CheckLDAPcanberequested extends base {
 		mp.getAlertContactNumber().click();
 		
 		String successM = mp.getSuccessMessage().getText();
-		String exSuccessM = "OrangeHRM Addons";
-		Assert.assertEquals(successM,exSuccessM);
+		String exSuccessM2 = "OrangeHRM Addons";
+		String exSuccessM = "MMMM";
+		
+		SoftAssert sf = new SoftAssert();
+		sf.assertEquals(successM,exSuccessM);
+		
+		//Assert.assertEquals(successM,exSuccessM);
         Log.info("LDAP Plugin added successfully");
+        System.out.println("LDAP Plugin added successfully");
+        
+        driver.navigate().refresh();
+
+        dp.getMarketPlaceButton().click();
+        mp.getTogglButton().click();
+        mp.getConFirmModalInstall().click();
+        sf.assertEquals(successM,exSuccessM2);
+        Log.info("Intergraion with Toggl button cikced");
+        System.out.println("Intergraion with Toggl button");
+        
+      sf.assertAll();
+
+        
+        
 	}
 
 

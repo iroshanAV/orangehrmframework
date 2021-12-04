@@ -17,10 +17,17 @@ public class MarketPlace {
 	@FindBy(id="buyBtn1")
 	private WebElement ldapButton;
 	
-	
-	//Intergration with Toggl
+	//Intergraion with Toggl button
 	@FindBy(id="installButton2")
-	private WebElement installBtn2;
+	private WebElement togglButton;
+	
+	
+
+	
+	
+	//Toggl popup alert
+	@FindBy(id="modal_confirm_install")
+	private WebElement conFirmModalInstall;
 	
 	
 	@FindBy(id="email")
@@ -63,6 +70,13 @@ public class MarketPlace {
 		return successMessage;
 	}
 	
+	public WebElement getTogglButton() {
+		return togglButton;
+	}
 	
+	
+	public WebElement getConFirmModalInstall() {
+		return conFirmModalInstall;
+	}
 	
 }

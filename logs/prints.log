@@ -1,7 +1,6 @@
-19:13:30.954 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-19:13:39.921 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-19:14:04.073 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-19:14:12.912 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-19:15:28.222 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-19:15:38.289 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-19:15:43.166 [main] INFO  com.btf.qa.resources.base - LDAP Plugin added successfully
+18:30:00.157 [main] INFO  com.btf.qa.resources.base - LDAP Plugin added successfully
+18:30:04.056 [main] INFO  com.btf.qa.resources.base - Intergraion with Toggl button
+18:30:59.367 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+18:31:15.636 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+18:31:23.791 [main] INFO  com.btf.qa.resources.base - LDAP Plugin added successfully
+18:31:27.239 [main] INFO  com.btf.qa.resources.base - Intergraion with Toggl button
