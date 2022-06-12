@@ -30,13 +30,9 @@ public class CheckLoginUnsuccessfulMessage extends base {
 	@Test
 	public void loginUnsuccessful() throws IOException {
 
-		driver.get(prop.getProperty("url"));
-
+        login();
 		LoginPage lp = new LoginPage(driver);
-		// Data Driven implemented here
-		lp.getUsername().sendKeys("test");
-		lp.getPassword().sendKeys("test");
-		lp.getLogin().click();
+		
 
 		String expectedM = "Invalid credentialsss";
 		String currentM = lp.getSpanMessage().getText();		

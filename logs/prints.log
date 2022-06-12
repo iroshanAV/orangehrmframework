@@ -1,6 +1,3 @@
-20:35:19.262 [main] INFO  com.btf.qa.resources.base - Entered comment
-20:35:19.476 [main] INFO  com.btf.qa.resources.base - Entered Assign Button
-20:35:29.606 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-20:35:57.791 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-20:36:07.468 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-20:36:18.661 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
+00:29:42.970 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+00:30:03.726 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+00:30:13.245 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
