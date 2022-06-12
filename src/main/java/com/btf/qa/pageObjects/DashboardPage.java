@@ -44,6 +44,23 @@ public class DashboardPage {
 	@FindBy(id="MP_link" )
 	private WebElement marketPageButton;
 	
+	@FindBy(xpath="//*[@id=\"menu_admin_viewAdminModule\"]/b")
+	private WebElement adminNav;
+	
+	@FindBy(xpath="//*[@id=\"menu_admin_Qualifications\"]")
+	private WebElement qualificationsNav;
+	
+	@FindBy(xpath="//*[@id=\"recordsListTable\"]/tbody/tr[1]/td[2]")
+	private WebElement firstElement;
+	
+	@FindBy(id="skill_name")
+	private WebElement skillName;
+	
+	@FindBy(id="skill_description")
+	private WebElement skillDescription;
+	
+	@FindBy(id="btnSave")
+	private WebElement buttonSave;
 	
 	public WebElement getassignLeaveNavigation() {
 		return assignLeaveNavigation;
@@ -80,6 +97,30 @@ public class DashboardPage {
 	
 	public WebElement getMarketPlaceButton() {
 		return marketPageButton;
+	}
+	
+	public WebElement getAdminNav() {
+		return adminNav;
+	}
+	
+	public WebElement getQualificationsNav() {
+		return qualificationsNav;
+	}
+	
+	public WebElement getFirstElementOfQualificationsNav() {
+		return firstElement;
+	}
+	
+	public WebElement getSkillName() {
+		return skillName;
+	}
+	
+	public WebElement getSkillDescription() {
+		return skillDescription;
+	}
+	
+	public WebElement getButtonSave() {
+		return buttonSave;
 	}
 	
 }

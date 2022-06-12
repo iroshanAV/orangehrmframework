@@ -13,6 +13,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.btf.qa.pageObjects.AssignLeavePage;
+import com.btf.qa.pageObjects.LoginPage;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class base {
@@ -52,6 +55,9 @@ public class base {
 	
 	}
 	
+	
+	
+	
 	public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source= ts.getScreenshotAs(OutputType.FILE);
@@ -62,14 +68,21 @@ public class base {
 	
 	
 	
-	public Properties getPropertyFromTCLevel(String propFLocation) throws IOException {
-		prop1 = new Properties();
-		FileInputStream fis1 = new FileInputStream(propFLocation);
-		
-		prop1.load(fis1);
-		return prop1;
-	}
+
 	
+     public void login() {
+    	 	 
+ 		driver.get(prop.getProperty("url"));
+
+		LoginPage lp = new LoginPage(driver);
+
+		lp.getUsername().sendKeys(prop.getProperty("username"));
+		lp.getPassword().sendKeys(prop.getProperty("password"));
+		lp.getLogin().click();
+		
+				
+		
+	}
 	
 	
 }

@@ -1,0 +1,7 @@
+18:51:28.488 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
+18:51:30.094 [main] INFO  com.btf.qa.resources.base - Started filling the form
+18:51:30.095 [main] INFO  com.btf.qa.resources.base - Entered name
+18:51:30.315 [main] INFO  com.btf.qa.resources.base - Entered leave type
+18:51:30.602 [main] INFO  com.btf.qa.resources.base - Entered from date
+18:51:39.038 [main] INFO  com.btf.qa.resources.base - Entered to date
+18:51:47.420 [main] INFO  com.btf.qa.resources.base - Entered duration

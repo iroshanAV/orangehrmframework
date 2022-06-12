@@ -24,11 +24,6 @@ public class CheckAddEmployeefunction extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
 	public WebDriver driver;
 
-	@BeforeClass
-	public void settingUpProperties() throws IOException {
-		prop1 = getPropertyFromTCLevel(
-				"C:\\\\Users\\\\irosh\\\\eclipse-workspace\\\\orangehrmframework\\\\src\\\\main\\\\java\\\\com\\\\btf\\\\qa\\\\BasicTestFramework\\\\basics.properties");
-	}
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -40,18 +35,9 @@ public class CheckAddEmployeefunction extends base {
 	@Test(priority = 1)
 	public void checkEmptyAssignLeaveErrors() {
 		// LOGGINS
-		driver.get(prop.getProperty("url"));
-		AssignLeavePage alp = new AssignLeavePage(driver);
-		LoginPage lp = new LoginPage(driver);
 
-		// Data Driven implemented here
-		lp.getUsername().sendKeys(prop1.getProperty("username"));
-		lp.getPassword().sendKeys(prop1.getProperty("password"));
-		lp.getLogin().click();
-
-		System.out.println("Successfully Logged in");
 		Log.info("Successfully Logged in");
-		
+		login();
 		DashboardPage dp = new DashboardPage(driver);
 		dp.getpimNavbar().click();
 		dp.getaddEmployee().click();
@@ -79,18 +65,7 @@ public class CheckAddEmployeefunction extends base {
 	public void checkAddEmployeeWorks() throws InterruptedException {
 
 //		// LOGGINS
-//		driver.get(prop.getProperty("url"));
-//		AssignLeavePage alp = new AssignLeavePage(driver);
-//		LoginPage lp = new LoginPage(driver);
-//
-//		// Data Driven implemented here
-//		lp.getUsername().sendKeys(prop1.getProperty("username"));
-//		lp.getPassword().sendKeys(prop1.getProperty("password"));
-//		lp.getLogin().click();
-//
-//		System.out.println("Successfully Logged in");
-//		Log.info("Successfully Logged in");
-
+		login();
 		DashboardPage dp = new DashboardPage(driver);
 		dp.getpimNavbar().click();
 		dp.getaddEmployee().click();
@@ -127,15 +102,7 @@ public class CheckAddEmployeefunction extends base {
 
 	}
 
-//	@DataProvider
-//	public Object[][] getData() {
-//		Object[][] data = new Object[1][2];
-//
-//		// 1st set of data
-//		data[0][0] = prop1.getPropertyFromTCLevel()
-//		data[0][1] = "admin123";
-//		return data;
-//	}
+
 
 	@AfterTest
 	public void teardown() {

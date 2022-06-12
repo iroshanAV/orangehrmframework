@@ -23,11 +23,7 @@ public class CheckAssignLeaveAccessible extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
     public WebDriver driver;
 
-	@BeforeClass
-	public void settingUpProperties() throws IOException {
-		prop1 = getPropertyFromTCLevel(
-				"C:\\\\Users\\\\irosh\\\\eclipse-workspace\\\\orangehrmframework\\\\src\\\\main\\\\java\\\\com\\\\btf\\\\qa\\\\BasicTestFramework\\\\basics.properties");
-	}
+
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -38,17 +34,9 @@ public class CheckAssignLeaveAccessible extends base {
 	@Test
 	public void checkAssignLeaveWorks() throws InterruptedException {
 
-		// LOGGINS
-		driver.get(prop.getProperty("url"));
+		login();
+
 		AssignLeavePage alp = new AssignLeavePage(driver);
-		LoginPage lp = new LoginPage(driver);
-		// Data Driven implemented here
-		lp.getUsername().sendKeys(prop1.getProperty("username"));
-		lp.getPassword().sendKeys(prop1.getProperty("password"));
-		lp.getLogin().click();
-
-		Log.info("Successfully Logged in");
-
 		// PAGE NAME VERIFICATION
 		DashboardPage dp = new DashboardPage(driver);
 		dp.getassignLeaveNavigation().click();

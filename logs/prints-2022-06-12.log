@@ -1,0 +1,7 @@
+20:34:40.619 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+20:34:54.064 [main] INFO  com.btf.qa.resources.base - Started filling the form
+20:34:54.064 [main] INFO  com.btf.qa.resources.base - Entered name
+20:34:54.235 [main] INFO  com.btf.qa.resources.base - Entered leave type
+20:34:54.469 [main] INFO  com.btf.qa.resources.base - Entered from date
+20:35:02.782 [main] INFO  com.btf.qa.resources.base - Entered to date
+20:35:11.117 [main] INFO  com.btf.qa.resources.base - Entered duration

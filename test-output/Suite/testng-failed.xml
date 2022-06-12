@@ -4,6 +4,17 @@
   <listeners>
     <listener class-name="com.btf.qa.BasicTestFramework.Listeners"/>
   </listeners>
+  <test thread-count="5" name="Check Employees can be added(failed)">
+    <classes>
+      <class name="com.btf.qa.BasicTestFramework.CheckAddEmployeefunction">
+        <methods>
+          <include name="initialize"/>
+          <include name="checkAddEmployeeWorks"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.btf.qa.BasicTestFramework.CheckAddEmployeefunction -->
+    </classes>
+  </test> <!-- Check Employees can be added(failed) -->
   <test thread-count="5" name="Check Unsuccessful login(failed)">
     <classes>
       <class name="com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage">

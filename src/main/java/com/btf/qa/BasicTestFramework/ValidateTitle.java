@@ -19,11 +19,6 @@ public class ValidateTitle extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
     public WebDriver driver;
 
-	@BeforeClass
-	public void settingUpProperties() throws IOException {
-		prop1 = getPropertyFromTCLevel(
-				"C:\\\\Users\\\\irosh\\\\eclipse-workspace\\\\orangehrmframework\\\\src\\\\main\\\\java\\\\com\\\\btf\\\\qa\\\\BasicTestFramework\\\\basics.properties");
-	}
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -34,13 +29,7 @@ public class ValidateTitle extends base {
 	@Test
 	public void basePageNavigation() throws IOException {
 
-		driver.get(prop.getProperty("url"));
-
-		LoginPage lp = new LoginPage(driver);
-		// Data Driven implemented here
-		lp.getUsername().sendKeys(prop1.getProperty("username"));
-		lp.getPassword().sendKeys(prop1.getProperty("password"));
-		lp.getLogin().click();
+		login();
 
 		Log.info("Successfully validated the title");
 

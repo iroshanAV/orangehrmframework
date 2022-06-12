@@ -42,11 +42,7 @@ public class CheckLoginUnsuccessfulMessage extends base {
 		String currentM = lp.getSpanMessage().getText();		
 		
 		Assert.assertEquals(expectedM, currentM);
-//		if (!currentM.equals(expectedM)) {
-//			Log.info("Login failed" + currentM);
-//		}
-//
-//		Log.info("Login attempt failed");
+
 	}
 
 	@AfterTest
