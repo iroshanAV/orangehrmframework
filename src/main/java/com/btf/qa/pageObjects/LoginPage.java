@@ -15,37 +15,37 @@ public class LoginPage {
 	}
 	
 	
-	@FindBy(id="txtUsername")
-	private WebElement username;	
+	@FindBy(xpath = "//form/div[1]/div/div[2]/input")
+	private WebElement txtUsername;	
 	
-	@FindBy(id="txtPassword")
-	private WebElement password;
+	@FindBy(xpath = "//form/div[2]/div/div[2]/input")
+	private WebElement txtPassword;
 	
-	@FindBy(id="btnLogin")
-	private WebElement login;
-	
-	
-	@FindBy(id="spanMessage")
-	private WebElement spanMessage;
+	@FindBy(xpath = "//form/div[3]/button")
+	private WebElement btnLogin;
 	
 	
+	@FindBy(xpath = "//p[text()='Invalid credentials']")
+	private WebElement lblSpanMsg;
 	
-	public WebElement getUsername() {
-		return username;
+	
+	
+	public WebElement gettxtUsername() {
+		return txtUsername;
 	}
 	
 	
-	public WebElement getPassword() {
-		return password;
+	public WebElement gettxtPassword() {
+		return txtPassword;
 	}
 	
 	
-	public WebElement getLogin() {
-		return login;
+	public WebElement getbtnLogin() {
+		return btnLogin;
 	}
 	
-	public WebElement getSpanMessage() {
-		return spanMessage;
+	public WebElement getlblSpanMsg() {
+		return lblSpanMsg;
 	}
 	
 }

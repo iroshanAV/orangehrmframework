@@ -8,119 +8,99 @@ import org.openqa.selenium.support.PageFactory;
 public class DashboardPage {
 
 	public WebDriver driver;
-	
-	public DashboardPage (WebDriver driver) {
+
+	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
+
+	@FindBy(xpath = "//span[text()='Leave']")
+	private WebElement lnkLeaveNavigation;
+
+	@FindBy(xpath = "//span[text()='Admin']")
+	private WebElement lnkAdminNavigation;
+
+	@FindBy(xpath = "//span[text()='Time']")
+	private WebElement lnkTimeNavigation;
+
+	@FindBy(xpath = "//span[text()='Recruitment']")
+	private WebElement lnkRecruitmentNavigation;
+
+	@FindBy(xpath = "//span[text()='My Info']")
+	private WebElement lnkMyInfoNavigation;
+
+	@FindBy(xpath = "//span[text()='PIM']")
+	private WebElement lnkPIMNavigation;
+
+	@FindBy(xpath = "//span[text()='Performance']")
+	private WebElement lnkPerformanceNavigation;
+
+	@FindBy(xpath = "//span[text()='Dashboard']")
+	private WebElement lnkDashboardNavigation;
+
+	@FindBy(xpath = "//span[text()='Directory']")
+	private WebElement lnkDirectoryNavigation;
+
+	@FindBy(xpath = "//span[text()='Maintanance']")
+	private WebElement lnkMaintenanceNavigation;
+
+	@FindBy(xpath = "//span[text()='Buzz']")
+	private WebElement lnkBuzzNavigation;
 	
 	
-	
-	@FindBy(xpath="//*[@id='dashboard-quick-launch-panel-menu_holder']/table/tbody/tr/td[1]/div/a")
-    private WebElement assignLeaveNavigation;
-	
-	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[2]/div/a")
-	private WebElement leaveListNavigation;
-	
-	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[3]/div/a")
-	private WebElement timeSheetsNavigation;
-	
-	@FindBy(xpath="//*[@id=\\'dashboard-quick-launch-panel-menu_holder\\']/table/tbody/tr/td[4]/div/a")
-	private WebElement applyLeaveNavigation;
-	
-	@FindBy(xpath="//*[@id=\'dashboard-quick-launch-panel-menu_holder\']/table/tbody/tr/td[5]/div/a")
-	private WebElement myLeaveNavigation;
-	
-	@FindBy(id="menu_pim_viewPimModule")
-	private WebElement pimNavbar;
-	
-	@FindBy(id="menu_pim_addEmployee")
-	private WebElement addEmployee;
-	
-	@FindBy(xpath="//*[@id=\"assign-leave\"]/div[1]/h1")
-	private WebElement assignLavePageName;
-	
-	@FindBy(id="MP_link" )
-	private WebElement marketPageButton;
-	
-	@FindBy(xpath="//*[@id=\"menu_admin_viewAdminModule\"]/b")
-	private WebElement adminNav;
-	
-	@FindBy(xpath="//*[@id=\"menu_admin_Qualifications\"]")
-	private WebElement qualificationsNav;
-	
-	@FindBy(xpath="//*[@id=\"recordsListTable\"]/tbody/tr[1]/td[2]")
-	private WebElement firstElement;
-	
-	@FindBy(id="skill_name")
-	private WebElement skillName;
-	
-	@FindBy(id="skill_description")
-	private WebElement skillDescription;
-	
-	@FindBy(id="btnSave")
-	private WebElement buttonSave;
-	
-	public WebElement getassignLeaveNavigation() {
-		return assignLeaveNavigation;
+	@FindBy(xpath = "//header/div[1]/div[1]/span/h6")
+	private WebElement lblLeaveHeader;
+
+
+
+	public WebElement getlnkLeaveNavigation() {
+		return lnkLeaveNavigation;
+	}
+
+	public WebElement getlnkAdminNavigation() {
+		return lnkAdminNavigation;
+	}
+
+	public WebElement getlnkTimeNavigation() {
+		return lnkTimeNavigation;
+	}
+
+	public WebElement getlnkRecruitmentNavigation() {
+		return lnkRecruitmentNavigation;
+	}
+
+	public WebElement getlnkMyInfoNavigation() {
+		return lnkMyInfoNavigation;
+	}
+
+	public WebElement getlnkPIMNavigation() {
+		return lnkPIMNavigation;
+	}
+
+	public WebElement getlnkPerformanceNavigation() {
+		return lnkPerformanceNavigation;
+	}
+
+	public WebElement getlnkDashboardNavigation() {
+		return lnkDashboardNavigation;
+	}
+
+	public WebElement getlnkDirectoryNavigation() {
+		return lnkDirectoryNavigation;
+	}
+
+	public WebElement getlnkMaintenanceNavigation() {
+		return lnkMaintenanceNavigation;
+	}
+
+	public WebElement getlnkBuzzNavigation() {
+		return lnkBuzzNavigation;
 	}
 	
-	public WebElement getleaveListNavigation() {
-		return leaveListNavigation;
+	public WebElement getlblLeaveHeader() {
+		return lblLeaveHeader;
 	}
-	
-	public WebElement gettimeSheetNavigation() {
-		return timeSheetsNavigation;
-	}
-	
-	public WebElement getapplyLeaveNavigation() {
-		return applyLeaveNavigation;
-	}
-	
-	public WebElement getmyLeaveNavigation() {
-		return myLeaveNavigation;
-	}
-	
-	
-	public WebElement getassignPageLeaveName() {
-		return assignLavePageName;
-	}
-	
-	public WebElement getpimNavbar() {
-		return pimNavbar;
-	}
-	
-	public WebElement getaddEmployee() {
-		return addEmployee;
-	}
-	
-	public WebElement getMarketPlaceButton() {
-		return marketPageButton;
-	}
-	
-	public WebElement getAdminNav() {
-		return adminNav;
-	}
-	
-	public WebElement getQualificationsNav() {
-		return qualificationsNav;
-	}
-	
-	public WebElement getFirstElementOfQualificationsNav() {
-		return firstElement;
-	}
-	
-	public WebElement getSkillName() {
-		return skillName;
-	}
-	
-	public WebElement getSkillDescription() {
-		return skillDescription;
-	}
-	
-	public WebElement getButtonSave() {
-		return buttonSave;
-	}
+
 	
 }

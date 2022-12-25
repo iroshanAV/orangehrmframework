@@ -15,26 +15,26 @@ public class LandingPage {
 	}
 
 	@FindBy(xpath="//*[@id=\\\"homepage\\\"]/header/div[1]/div/nav/ul/li[4]/a/span")
-	private WebElement signin;
+	private WebElement lnkSignin;
 	
 	@FindBy(xpath="//*[@id=\"content\"]/div/div/h2")
-	private WebElement title;
+	private WebElement lblTitle;
 	
 	@FindBy(xpath="//*[@id=\"homepage\"]/header/div[2]/div/nav")
-	private WebElement NavBar;
+	private WebElement lnkNavBar;
 	
 		
 
-	public WebElement getLogin() {
-		return signin;
+	public WebElement getlnkSignin() {
+		return lnkSignin;
 	}
 	
-	public WebElement getTitle() {
-		return title;
+	public WebElement getlblTitle() {
+		return lblTitle;
 	}
 	
-	public WebElement getNavBar() {
-		return NavBar;
+	public WebElement getlnkNavBar() {
+		return lnkNavBar;
 	}
 	
 	
