@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\irosh\eclipse-workspace\orangehrmframework\testng.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -124,11 +124,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.btf.qa.BasicTestFramework.ValidateTitle" class="method navigator-link" hash-for-method="basePageNavigation">basePageNavigation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible" class="method navigator-link" hash-for-method="checkAssignLeaveWorks">checkAssignLeaveWorks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,15 +159,15 @@
                   <a name="checkAddEmployeeWorks">
                   </a> <!-- checkAddEmployeeWorks -->
                   <span class="method-name">checkAddEmployeeWorks</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtUsername&quot;}
-  (Session info: chrome=102.0.5005.115)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;profile-pic&apos;]/h1&quot;}
+  (Session info: chrome=108.0.5359.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AVIS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;192.168.1.3&apos;, ip: &apos;fe80:0:0:0:1c29:419:41da:f304%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: df7534ed9162db6586bab5472149829a
-*** Element info: {Using=id, value=txtUsername}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/t_/09xlrdkj42v...}, goog:chromeOptions: {debuggerAddress: localhost:57828}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06be2d79dcdd235e332cab82f4c5af2f
+*** Element info: {Using=xpath, value=//div[@id=&apos;profile-pic&apos;]/h1}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -180,14 +175,13 @@ Session ID: df7534ed9162db6586bab5472149829a
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
-	at com.btf.qa.resources.base.login(base.java:79)
-	at com.btf.qa.BasicTestFramework.CheckAddEmployeefunction.checkAddEmployeeWorks(CheckAddEmployeefunction.java:68)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at com.btf.qa.BasicTestFramework.CheckAddEmployeefunction.checkAddEmployeeWorks(CheckAddEmployeefunction.java:85)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -206,15 +200,15 @@ Session ID: df7534ed9162db6586bab5472149829a
                   <a name="loginUnsuccessful">
                   </a> <!-- loginUnsuccessful -->
                   <span class="method-name">loginUnsuccessful</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#spanMessage&quot;}
-  (Session info: chrome=102.0.5005.115)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Invalid credentials&apos;]&quot;}
+  (Session info: chrome=108.0.5359.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AVIS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;192.168.1.3&apos;, ip: &apos;fe80:0:0:0:1c29:419:41da:f304%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.0.1&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\irosh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59667}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66dd948a171ca7dd00de486f539dcca7
-*** Element info: {Using=id, value=spanMessage}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/t_/09xlrdkj42v...}, goog:chromeOptions: {debuggerAddress: localhost:57846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41367bc9dde8f78ebbaaee078063aa0a
+*** Element info: {Using=xpath, value=//p[text()=&apos;Invalid credentials&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -222,13 +216,13 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy28.getText(Unknown Source)
-	at com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage.loginUnsuccessful(CheckLoginUnsuccessfulMessage.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+	at com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage.loginUnsuccessful(CheckLoginUnsuccessfulMessage.java:35)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -239,14 +233,14 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible</span>
+              <span class="class-name">com.btf.qa.BasicTestFramework.CheckLoginSuccess</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkAssignLeaveWorks">
-                  </a> <!-- checkAssignLeaveWorks -->
-                  <span class="method-name">checkAssignLeaveWorks</span>
+                  <a name="loginSuccess">
+                  </a> <!-- loginSuccess -->
+                  <span class="method-name">loginSuccess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,21 +263,6 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.btf.qa.BasicTestFramework.CheckLoginSuccess</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginSuccess">
-                  </a> <!-- loginSuccess -->
-                  <span class="method-name">loginSuccess</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.btf.qa.BasicTestFramework.ValidateTitle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -299,7 +278,7 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\irosh\eclipse-workspace\orangehrmframework\testng.xml</span>
+            <span class="header-content">/Users/iroshanvithanage/eclipse-workspace/orangehrmframework/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -314,11 +293,6 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
       &lt;class name=&quot;com.btf.qa.BasicTestFramework.CheckLoginSuccess&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Validating Login Success --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Check leaves can be assigned&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Check leaves can be assigned --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Check Employees can be added&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.btf.qa.BasicTestFramework.CheckAddEmployeefunction&quot;/&gt;
@@ -346,9 +320,6 @@ Session ID: 66dd948a171ca7dd00de486f539dcca7
             <ul>
               <li>
                 <span class="test-name">Validating Login Success (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Check leaves can be assigned (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Check Employees can be added (1 class)</span>
@@ -383,31 +354,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkAssignLeaveWorks')
-data.setCell(0, 2, 'com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible')
-data.setCell(0, 3, 46690);
+data.setCell(0, 1, 'checkAddEmployeeWorks')
+data.setCell(0, 2, 'com.btf.qa.BasicTestFramework.CheckAddEmployeefunction')
+data.setCell(0, 3, 29021);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginUnsuccessful')
 data.setCell(1, 2, 'com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage')
-data.setCell(1, 3, 21075);
+data.setCell(1, 3, 28358);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkEmptyAssignLeaveErrors')
 data.setCell(2, 2, 'com.btf.qa.BasicTestFramework.CheckAddEmployeefunction')
-data.setCell(2, 3, 13674);
+data.setCell(2, 3, 15373);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkAddEmployeeWorks')
-data.setCell(3, 2, 'com.btf.qa.BasicTestFramework.CheckAddEmployeefunction')
-data.setCell(3, 3, 11125);
+data.setCell(3, 1, 'loginSuccess')
+data.setCell(3, 2, 'com.btf.qa.BasicTestFramework.CheckLoginSuccess')
+data.setCell(3, 3, 9851);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginSuccess')
-data.setCell(4, 2, 'com.btf.qa.BasicTestFramework.CheckLoginSuccess')
-data.setCell(4, 3, 8134);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'basePageNavigation')
-data.setCell(5, 2, 'com.btf.qa.BasicTestFramework.ValidateTitle')
-data.setCell(5, 3, 7949);
+data.setCell(4, 1, 'basePageNavigation')
+data.setCell(4, 2, 'com.btf.qa.BasicTestFramework.ValidateTitle')
+data.setCell(4, 3, 9677);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -439,86 +406,79 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.btf.qa.BasicTestFramework.CheckLoginSuccess</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginSuccess</span>
-                <span class="method-start">5878 ms</span>
+                <span class="method-start">6641 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">14036 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.btf.qa.BasicTestFramework.CheckAssignLeaveAccessible</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">16044 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">checkAssignLeaveWorks</span>
-                <span class="method-start">19073 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">65769 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">16501 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.btf.qa.BasicTestFramework.CheckAddEmployeefunction</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">66839 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">16938 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkEmptyAssignLeaveErrors</span>
-                <span class="method-start">71649 ms</span>
+                <span class="method-start">21680 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">37056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">37136 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkAddEmployeeWorks</span>
-                <span class="method-start">85326 ms</span>
+                <span class="method-start">41712 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">96837 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">71049 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.btf.qa.BasicTestFramework.CheckLoginUnsuccessfulMessage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">97203 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">71195 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginUnsuccessful</span>
-                <span class="method-start">103052 ms</span>
+                <span class="method-start">76512 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">124384 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">105175 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.btf.qa.BasicTestFramework.ValidateTitle</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">124816 ms</span>
-              </div> <!-- configuration-test before -->
+                <span class="method-start">105391 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation</span>
-                <span class="method-start">126701 ms</span>
+                <span class="method-start">110127 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">134651 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">119806 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

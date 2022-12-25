@@ -2,7 +2,6 @@ package com.btf.qa.resources;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -13,7 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.btf.qa.pageObjects.AssignLeavePage;
 import com.btf.qa.pageObjects.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -25,7 +23,7 @@ public class base {
 	
 	public WebDriver initializeDriver() throws IOException {
 	prop = new Properties();
-	FileInputStream fis = new FileInputStream("C:\\Users\\irosh\\eclipse-workspace\\orangehrmframework\\src\\main\\java\\com\\btf\\qa\\resources\\data.properties");
+	FileInputStream fis = new FileInputStream("/Users/iroshanvithanage/eclipse-workspace/orangehrmframework/src/main/java/com/btf/qa/resources/data.properties");
 		
 	prop.load(fis);
 	String browserName = prop.getProperty("browser");
@@ -36,17 +34,14 @@ public class base {
 		//System.setProperty("webdriver.chrome.driver", "G:\\Selenium\\Drivers\\chromedriver\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();		
 		driver = new ChromeDriver();
-		
 	}
 	
 	else if(browserName.equals("firefox")) {
-		//EXECUTE IN FIREFOX
-		
+		//EXECUTE IN FIREFOX	
 	}
 	
 	else if(browserName.equals("IE")) {
 		//EXECUTE IN IE
-	
 	}
 	
 	driver.manage().window().maximize();
@@ -57,7 +52,7 @@ public class base {
 	
 	
 	
-	
+	//screenshot setting up
 	public String getScreenShotPath(String testCaseName,WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source= ts.getScreenshotAs(OutputType.FILE);
@@ -69,16 +64,13 @@ public class base {
 	
 	
 
-	
-     public void login() {
-    	 	 
+	//common login function
+     public void login() {  	 	 
  		driver.get(prop.getProperty("url"));
-
 		LoginPage lp = new LoginPage(driver);
-
-		lp.getUsername().sendKeys(prop.getProperty("username"));
-		lp.getPassword().sendKeys(prop.getProperty("password"));
-		lp.getLogin().click();
+		lp.gettxtUsername().sendKeys(prop.getProperty("username"));
+		lp.gettxtPassword().sendKeys(prop.getProperty("password"));
+		lp.getbtnLogin().click();
 		
 				
 		

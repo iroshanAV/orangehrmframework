@@ -7,89 +7,82 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.btf.qa.pageObjects.AddEmployeePage;
-import com.btf.qa.pageObjects.AssignLeavePage;
 import com.btf.qa.pageObjects.DashboardPage;
-import com.btf.qa.pageObjects.LoginPage;
+import com.btf.qa.pageObjects.PIMPage;
 import com.btf.qa.resources.base;
-
-
 
 public class CheckAddEmployeefunction extends base {
 	public static Logger Log = LogManager.getLogger(base.class.getName());
 	public WebDriver driver;
 
-
-	@BeforeTest
+	@BeforeMethod
 	public void initialize() throws IOException {
 		driver = initializeDriver();
 		Log.info("Driver is initialized");
 	}
 
 	// Check whether empty user details gives an error
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void checkEmptyAssignLeaveErrors() {
 		// LOGGINS
 
 		Log.info("Successfully Logged in");
 		login();
 		DashboardPage dp = new DashboardPage(driver);
-		dp.getpimNavbar().click();
-		dp.getaddEmployee().click();
+		PIMPage pp = new PIMPage(driver);
+		
+		dp.getlnkPIMNavigation().click();
+		pp.getbtnAddEmployee().click();
 
 		// ENTER LOGIN DETAILS
-		AddEmployeePage aep = new AddEmployeePage(driver);
-		aep.getsaveButton().click();
-		
-		//Check required message
-		String requiredSpan = aep.getSpanRequiredMessage().getText();
-		
-		if(requiredSpan.equals("Required")) {
+		pp.getbtnSave().click();
+
+		// Check required message
+		String requiredSpan = pp.getlblRequiredTag().getText();
+
+		if (requiredSpan.equals("Required")) {
 			Assert.assertTrue(true);
-		}else {
+		} else {
 			Assert.assertTrue(false);
 		}
-		
+
 	}
 
-	
-	
-	
 	// Check whether correct user details helps to log in
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void checkAddEmployeeWorks() throws InterruptedException {
 
-//		// LOGGINS
+		// LOGGINS
 		login();
 		DashboardPage dp = new DashboardPage(driver);
-		dp.getpimNavbar().click();
-		dp.getaddEmployee().click();
+		PIMPage pp = new PIMPage(driver);
+		
+		dp.getlnkPIMNavigation().click();
+		pp.getbtnAddEmployee().click();
 
 		// ENTER LOGIN DETAILS
-		AddEmployeePage aep = new AddEmployeePage(driver);
-		aep.getfirstNameF().sendKeys("JasonJSa");
-		aep.getmiddleNameF().sendKeys("Jamesaa");
-		aep.getlastNameF().sendKeys("Smithaa");
+		pp.gettxtFirstName().sendKeys("JasonJSa");
+		pp.gettxtMiddleName().sendKeys("Jamesaa");
+		pp.gettxtLastName().sendKeys("Smithaa");
 
-		aep.getphotofileF().sendKeys("F:\\Projects\\samples\\smile.jpg");
-		aep.getcreateLoginCheckBox().click();
+		pp.getbtnProfilePicture().sendKeys("F:\\Projects\\samples\\smile.jpg");
+		pp.getchkCreateLogin().click();
 
 		// CREATE USIQUE USERNAME BASED ON DATE AND TIME
 		Date d = new Date(System.currentTimeMillis());
-		aep.getuserNameF().sendKeys("JasonJSa " + d);
-		aep.getpasswordF().sendKeys("password123");
-		aep.getconfirmPasswordF().sendKeys("password123");
-		aep.getsaveButton().click();
+		pp.gettxtUserName().sendKeys("JasonJSa " + d);
+		pp.gettxtPassword().sendKeys("123456789Abc?");
+		pp.gettxtConfirmPassword().sendKeys("123456789Abc?");
+		pp.getrdBtnstatus().click();
 
 		System.out.println("User successfuly created");
 		Log.info("User successfuly created");
 
-		String currentProfileName = aep.getprofileName().getText();
+		String currentProfileName = pp.getprofileName().getText();
 		String expectedProfileName = "JasonJSa " + d;
 		System.out.println(currentProfileName);
 		System.out.println(expectedProfileName);
@@ -102,11 +95,9 @@ public class CheckAddEmployeefunction extends base {
 
 	}
 
-
-
-	@AfterTest
+	@AfterMethod
 	public void teardown() {
-		driver.close();
+		driver.quit();
 		System.out.println("You have closed the broswer");
 	}
 

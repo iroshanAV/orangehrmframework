@@ -5,12 +5,10 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.btf.qa.pageObjects.LoginPage;
 import com.btf.qa.resources.base;
 
 public class CheckLoginSuccess extends base {
@@ -18,7 +16,7 @@ public class CheckLoginSuccess extends base {
     public WebDriver driver;
 
 
-	@BeforeTest
+	@BeforeMethod
 	public void initialize() throws IOException {
 		driver = initializeDriver();
 		Log.info("Driver is initialized");
@@ -26,7 +24,6 @@ public class CheckLoginSuccess extends base {
 
 	@Test
 	public void loginSuccess() throws IOException {
-
 		//Login
 		login();
 		Log.info("Successfully Logged in");
@@ -34,9 +31,9 @@ public class CheckLoginSuccess extends base {
 
 
 
-	@AfterTest
+	@AfterMethod
 	public void teardown() {
-		driver.close();
+		driver.quit();
 		System.out.println("You have closed the broswer");
 	}
 }

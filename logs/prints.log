@@ -1,5 +1,5 @@
-07:55:32.364 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-07:55:32.378 [main] INFO  com.btf.qa.resources.base - Successfully Logged in
-07:56:03.778 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-07:56:27.426 [main] INFO  com.btf.qa.resources.base - Driver is initialized
-07:56:35.377 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
+16:11:50.002 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+16:12:08.961 [main] INFO  com.btf.qa.resources.base - User successfuly created
+16:12:24.809 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+16:12:58.424 [main] INFO  com.btf.qa.resources.base - Driver is initialized
+16:13:08.102 [main] INFO  com.btf.qa.resources.base - Successfully validated the title
